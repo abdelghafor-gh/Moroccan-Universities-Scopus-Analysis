@@ -47,11 +47,11 @@
 
 Our data model follows a  **star schema** :
 
-* **Fact Table** : Publications (Document Type, Publication Date, Citations, etc.)
+* **Fact Table** : Publications (Title, AffiliationId, Document Type, Citations, etc.)
 * **Dimensions** :
-* Authors (Name, Affiliation, H-index)
-* Journals (Title, Impact Factor, ISSN)
-* Universities (Name, Country, Ranking)
+* Authors (Name, AffiliationId, etc.)
+* Journals (Title, Rank, ISSN, etc.)
+* Affiliations (Name, City, University)
 
 ---
 
@@ -187,18 +187,18 @@ If you have any questions or suggestions, feel free to reach out to any of us!
 
  **Name** : Abdelghafor Elgharbaoui
  **Email** : [abdelghaforelgharbaoui@gmail.com]()
- **LinkedIn** : [Abdelghafor's LinkedIn](https://linkedin.com/in/personAprofile)
+ **LinkedIn** : [Abdelghafor&#39;s LinkedIn](https://linkedin.com/in/personAprofile)
 
  **Name** : Aymane maghouti
  **Email** : [personB@example.com]()
- **LinkedIn** : [Aymane's LinkedIn](https://linkedin.com/in/personBprofile)
+ **LinkedIn** : [Aymane&#39;s LinkedIn](https://linkedin.com/in/personBprofile)
 
  **Name** : Hamza Motassim
  **Email** : [personC@example.com]()
- **LinkedIn** : [Hamza's LinkedIn](https://linkedin.com/in/personCprofile)
+ **LinkedIn** : [Hamza&#39;s LinkedIn](https://linkedin.com/in/personCprofile)
 
  **Name** : Ossama Outmani
  **Email** : [personD@example.com]()
- **LinkedIn** : [Ossama's LinkedIn](https://linkedin.com/in/personDprofile)
+ **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
 
 ---
