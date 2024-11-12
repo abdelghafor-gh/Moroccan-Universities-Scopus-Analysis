@@ -65,7 +65,7 @@ Our interactive Power BI dashboard includes:
 * 📉  **Trend Analysis** : Publication trends over the years
 * 🔍  **Advanced Filters** : Drill-down capabilities for deep data exploration
 
-### 🔗 [View Dashboard Demo](#) (Link to your Power BI dashboard or demo)
+#### 🔗 [View Dashboard Demo](#)
 
 ---
 
