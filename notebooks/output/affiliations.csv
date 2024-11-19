@@ -1,0 +1,176 @@
+id,Affiliation,Abbreviation,University,City,Affiliation En Name
+1,Université Abdelmalek Essaadi,UAE,Université Abdelmalek Essaadi,Tétouan,Abdelmalek Essaadi University
+2,Faculté Oussoul Eddine ,FOE ,Université Abdelmalek Essaadi,Tétouan,Faculty of Fundamentals of Religion
+3,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Abdelmalek Essaadi,Tanger,"Faculty of Legal, Economic and Social Sciences"
+4,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Abdelmalek Essaadi,Tétouan,"Faculty of Legal, Economic and Social Sciences"
+5,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Abdelmalek Essaadi,Tétouan,Faculty of Letters and Humanities
+6,Faculté des Sciences ,FS ,Université Abdelmalek Essaadi,Tétouan,Faculty of Sciences
+7,Faculté Polydisciplinaire ,FP ,Université Abdelmalek Essaadi,Larache,Multidisciplinary Faculty
+8,Faculté Polydisciplinaire ,FP ,Université Abdelmalek Essaadi,Kssar El Kébir,Multidisciplinary Faculty
+9,Faculté des Sciences et Techniques ,FST ,Université Abdelmalek Essaadi,Tanger,Faculty of Sciences and Techniques
+10,Faculté des Sciences et Techniques ,FST ,Université Abdelmalek Essaadi,Al Hoceima,Faculty of Sciences and Techniques
+11,Faculté de Médecine et Pharmacie ,FMP ,Université Abdelmalek Essaadi,Tanger,Faculté de Médecine et Pharmacie
+12,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Abdelmalek Essaadi,Tanger,National School of Applied Sciences
+13,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Abdelmalek Essaadi,Tétouan,National School of Applied Sciences
+14,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Abdelmalek Essaadi,Al Hoceima,National School of Applied Sciences
+15,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Abdelmalek Essaadi,Tanger,National School of Commerce and Management
+16,Ecole Normale Supérieure ,ENS ,Université Abdelmalek Essaadi,Tétouan,Higher Normal School
+17,Ecole Supérieure Roi Fahd de Traduction ,ESRFT ,Université Abdelmalek Essaadi,Tanger,King Fahd Higher School of Translation
+18,Université Cadi Ayyad,UCA,Université Cadi Ayyad, Marrakech,Cadi Ayyad University
+19,Faculté de la Langue Arabe ,FLA ,Université Cadi Ayyad,Marrakech,Faculty of Arabic Language
+20,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Cadi Ayyad,Marrakech,"Faculty of Legal, Economic and Social Sciences"
+21,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Cadi Ayyad,EL Kelaâ des Sraghna,"Faculty of Legal, Economic and Social Sciences"
+22,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Cadi Ayyad,Marrakech,Faculty of Letters and Humanities
+23,Faculté des Sciences Semlalia ,FS Semlalia ,Université Cadi Ayyad,Marrakech,Faculté des Sciences Semlalia
+24,Faculté Polydisciplinaire ,FP ,Université Cadi Ayyad,Safi,Multidisciplinary Faculty
+25,Faculté des Sciences et Techniques Guéliz ,FST Guéliz ,Université Cadi Ayyad,Marrakech,Faculté des Sciences et Techniques Guéliz
+26,Faculté de Médecine et de Pharmacie ,FMP ,Université Cadi Ayyad,Marrakech,Faculty of Medicine and Pharmacy
+27,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Cadi Ayyad,Marrakech,National School of Applied Sciences
+28,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Cadi Ayyad,Safi,National School of Applied Sciences
+29,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Cadi Ayyad,Marrakech,National School of Commerce and Management
+30,Ecole Normale Supérieure ,ENS ,Université Cadi Ayyad,Marrakech,Higher Normal School
+31,Ecole Supérieure de Technologie ,EST ,Université Cadi Ayyad,Safi,Higher School of Technology
+32,Ecole Supérieure de Technologie ,EST ,Université Cadi Ayyad,Essaouira,Higher School of Technology
+33,Ecole Supérieure de Technologie ,EST ,Université Cadi Ayyad,EL Kelaâ des Sraghna,Higher School of Technology
+34,Université Chouaib Doukkali,UCD,Université Chouaib Doukkali,El Jadida,Chouaib Doukkali University
+35,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Chouaib Doukkali,El Jadida,"Faculty of Legal, Economic and Social Sciences"
+36,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Chouaib Doukkali,El Jadida,Faculty of Letters and Humanities
+37,Faculté des Sciences ,FS ,Université Chouaib Doukkali,El Jadida,Faculty of Sciences
+38,Faculté Polydisciplinaire ,FP ,Université Chouaib Doukkali,Sidi Bennour,Multidisciplinary Faculty
+39,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Chouaib Doukkali,El Jadida,National School of Applied Sciences
+40,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Chouaib Doukkali,El Jadida,National School of Commerce and Management
+41,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Chouaib Doukkali,El Jadida,Higher School of Education and Training
+42,Ecole Supérieure de Technologie ,EST ,Université Chouaib Doukkali,Sidi Bennour,Higher School of Technology
+43,Université Hassan 1er,UH1,Université Hassan 1er,Settat,Hassan 1st University
+44,Faculté des Sciences Juridiques et Politiques ,FSJP ,Université Hassan 1er,Settat,Faculty of Juridical and Political Sciences
+45,Faculté d'Economie et de Gestion ,FEG ,Université Hassan 1er,Settat,Faculty of Economics and Management
+46,"Faculté des Langues, Arts et Science humaines ",FLASH ,Université Hassan 1er,Settat,"Faculty of Languages, Arts and Human Sciences"
+47,Faculté des Sciences et Techniques ,FST ,Université Hassan 1er,Settat,Faculty of Sciences and Techniques
+48,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Hassan 1er,Berrechid,National School of Applied Sciences
+49,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Hassan 1er,Settat,National School of Commerce and Management
+50,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Hassan 1er,Berrechid,Higher School of Education and Training
+51,Institut Supérieur des Sciences de la Santé ,ISSS ,Université Hassan 1er,Settat,Higher Institute of Health Sciences
+52,Institut des Sciences du Sport ,ISS ,Université Hassan 1er,Settat,Institute of Sports Sciences
+53,Université Hassan II ,UH2,Université Hassan II ,Casablanca ,Hassan II University
+54,"Faculté des Sciences Juridiques, Economiques et Sociales Aïn Chock ",FSJES Aïn Chock ,Université Hassan II,Casablanca,"Faculty of Legal, Economic and Social Sciences of Aïn Chock"
+55,"Faculté des Sciences Juridiques, Economiques et Sociales Aïn Sebaa ",FSJES Aïn Sebaa ,Université Hassan II,Casablanca,"Faculty of Legal, Economic and Social Sciences of Aïn Sebaa"
+56,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Hassan II,Mohammedia,"Faculty of Legal, Economic and Social Sciences"
+57,Faculté des Lettres et des Sciences Humaines Aïn Chock ,FLSH Aïn Chock ,Université Hassan II,Casablanca,Faculté des Lettres et des Sciences Humaines Aïn Chock
+58,Faculté des Lettres et des Sciences Humaines Ben M'Sick ,FLSH Ben M'Sick ,Université Hassan II,Casablanca,Faculté des Lettres et des Sciences Humaines Ben M'Sick
+59,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Hassan II,Mohammedia,Faculty of Letters and Humanities
+60,Faculté des Sciences Aïn Chock ,FS Aïn Chock ,Université Hassan II,Casablanca,Faculté des Sciences Aïn Chock
+61,Faculté des Sciences Ben M'Sick ,FS Ben M'Sick ,Université Hassan II,Casablanca,Faculté des Sciences Ben M'Sick
+62,Faculté des Sciences et Techniques ,FST ,Université Hassan II,Mohammedia,Faculty of Sciences and Techniques
+63,Faculté de Médecine et de Pharmacie ,FMP ,Université Hassan II,Casablanca,Faculty of Medicine and Pharmacy
+64,Faculté de Médecine Dentaire ,FMD ,Université Hassan II,Casablanca,Faculty of Dental Medicine
+65,Ecole Nationale Supérieure d'Electricité et de Mécanique ,ENSEM ,Université Hassan II,Casablanca,National Higher School of Electricity and Mechanics
+66,Ecole Nationale Supérieure des Arts et Métiers ,ENSAM ,Université Hassan II,Casablanca,National Higher School of Arts and Crafts
+67,Ecole Nationale Supérieure d'Art et Design ,ENSAD ,Université Hassan II,Casablanca,National Higher School of Art and Design
+68,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Hassan II,Casablanca,National School of Commerce and Management
+69,Ecole Normale Supérieure ,ENS ,Université Hassan II,Casablanca,Higher Normal School
+70,Ecole Normale Supérieure de l'Enseignement Technique ,ENSET ,Université Hassan II,Mohammedia,Higher Normal School of Technical Education
+71,Ecole Supérieure de Technologie ,EST ,Université Hassan II,Casablanca,Higher School of Technology
+72,Université Ibn Tofail,UIT,Université Ibn Tofail,Kénitra,Ibn Tofail University
+73,Faculté des Sciences Juridiques et Politiques ,FSJP ,Université Ibn Tofail,Kénitra,Faculty of Juridical and Political Sciences
+74,Faculté d'Economie et de Gestion ,FEG ,Université Ibn Tofail,Kénitra,Faculty of Economics and Management
+75,"Facultés des Langues, des Lettres et des Arts ",FLLA ,Université Ibn Tofail,Kénitra,"Faculty of Languages, Letters and Arts"
+76,Faculté des Sciences Humaines et Sociale ,FSHS ,Université Ibn Tofail,Kénitra,Faculty of Human and Social Sciences
+77,Faculté des Sciences ,FS ,Université Ibn Tofail,Kénitra,Faculty of Sciences
+78,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Ibn Tofail,Kénitra,National School of Applied Sciences
+79,Ecole Nationale Supérieure de Chimie ,ENSC ,Université Ibn Tofail,Kénitra,Ecole Nationale Supérieure de Chimie
+80,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Ibn Tofail,Kénitra,National School of Commerce and Management
+81,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Ibn Tofail,Kénitra,Higher School of Education and Training
+82,Ecole Supérieure de Technologie ,EST ,Université Ibn Tofail,Kénitra,Higher School of Technology
+83,Institut des Métiers du Sport ,IMS ,Université Ibn Tofail,Kénitra,Institute of Sports Professions
+84,Université Ibn Zohr,UIZ,Université Ibn Zohr,Agadir,Ibn Zohr University
+85,Faculté Chariâa ,Faculté Chariâa ,Université Ibn Zohr,Agadir,Faculty of Islamic Law (Sharia)
+86,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Ibn Zohr,Agadir,"Faculty of Legal, Economic and Social Sciences"
+87,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Ibn Zohr,Ait Melloul,"Faculty of Legal, Economic and Social Sciences"
+88,Faculté d'Economie et de Gestion ,FEG ,Université Ibn Zohr,Guelmim,Faculty of Economics and Management
+89,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Ibn Zohr,Agadir,Faculty of Letters and Humanities
+90,"Faculté des Langues, Arts et Science humaines ",FLASH ,Université Ibn Zohr,Ait Melloul,"Faculty of Languages, Arts and Human Sciences"
+91,Faculté des Sciences ,FS ,Université Ibn Zohr,Agadir,Faculty of Sciences
+92,Faculté des Sciences Appliquées ,FSA ,Université Ibn Zohr,Ait Melloul,Faculty of Applied Sciences
+93,Faculté Polydisciplinaire ,FP ,Université Ibn Zohr,Ouarzazate,Multidisciplinary Faculty
+94,Faculté Polydisciplinaire ,FP ,Université Ibn Zohr,Taroudant,Multidisciplinary Faculty
+95,Faculté Polydisciplinaire ,FP ,Université Ibn Zohr,Es-Semara,Multidisciplinary Faculty
+96,Faculté de Médecine et de Pharmacie ,FMP ,Université Ibn Zohr,Agadir,Faculty of Medicine and Pharmacy
+97,Faculté de Médecine et de Pharmacie ,FMP ,Université Ibn Zohr,Laayoune,Faculty of Medicine and Pharmacy
+98,Faculté de Médecine et de Pharmacie ,FMP ,Université Ibn Zohr,Guelmim,Faculty of Medicine and Pharmacy
+99,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Ibn Zohr,Agadir,National School of Applied Sciences
+100,Ecole Nationale Supérieure de l'Intelligence Artificielle et Sciences des Données ,ENSIASD ,Université Ibn Zohr,Taroudant,National Higher School of Artificial Intelligence and Data Sciences
+101,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Ibn Zohr,Agadir,National School of Commerce and Management
+102,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Ibn Zohr,Dakhla,National School of Commerce and Management
+103,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Ibn Zohr,Agadir,Higher School of Education and Training
+104,Ecole Supérieure de Technologie ,EST ,Université Ibn Zohr,Agadir,Higher School of Technology
+105,Ecole Supérieure de Technologie ,EST ,Université Ibn Zohr,Guelmim,Higher School of Technology
+106,Ecole Supérieure de Technologie ,EST ,Université Ibn Zohr,Laayoune,Higher School of Technology
+107,Ecole Supérieure de Technologie ,EST ,Université Ibn Zohr,Dakhla,Higher School of Technology
+108,Université Mohammed Premier,UM1,Université Mohammed Premier,Oujda,Mohammed First University
+109,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Mohammed Premier,Oujda,"Faculty of Legal, Economic and Social Sciences"
+110,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Mohammed Premier,Oujda,Faculty of Letters and Humanities
+111,Faculté des Sciences ,FS ,Université Mohammed Premier,Oujda,Faculty of Sciences
+112,Faculté Polydisciplinaire ,FP ,Université Mohammed Premier,Nador,Multidisciplinary Faculty
+113,Faculté de Médecine et de Pharmacie ,FMP ,Université Mohammed Premier,Oujda,Faculty of Medicine and Pharmacy
+114,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Mohammed Premier,Oujda,National School of Applied Sciences
+115,Ecole Nationale Supérieure de l'Intelligence Artificielle et du Digital ,ENSIAD ,Université Mohammed Premier,Berkane,National Higher School of Artificial Intelligence and Digital Sciences
+116,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Mohammed Premier,Oujda,National School of Commerce and Management
+117,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Mohammed Premier,Oujda,Higher School of Education and Training
+118,Ecole Supérieure de Technologie ,EST ,Université Mohammed Premier,Oujda,Higher School of Technology
+119,Ecole Supérieure de Technologie ,EST ,Université Mohammed Premier,Nador,Higher School of Technology
+120,Université Mohammed V,UMV, Université Mohammed V, Rabat,Mohammed V University
+121,"Faculté des Sciences Juridiques, Economiques et Sociales Agdal",FSJES Agdal,Université Mohammed V,Rabat,"Faculté des Sciences Juridiques, Economiques et Sociales Agdal"
+122,"Faculté des Sciences Juridiques, Economiques et Sociales Souissit",FSJES Souissi,Université Mohammed V,Rabat,"Faculty of Legal, Economic and Social Sciences of Souissit"
+123,"Faculté des Sciences Juridiques, Economiques et Sociales",FSJES Salé,Université Mohammed V,Salé,"Faculty of Legal, Economic and Social Sciences"
+124,Faculté des Lettres et des Sciences Humaines,FLSH,Université Mohammed V,Rabat,Faculty of Letters and Humanities
+125,Faculté des Sciences ,FS ,Université Mohammed V,Rabat,Faculty of Sciences
+126,Faculté de Médecine et de Pharmacie,FMP,Université Mohammed V,Rabat,Faculty of Medicine and Pharmacy
+127,Faculté de Médecine Dentaire ,FMD ,Université Mohammed V,Rabat,Faculty of Dental Medicine
+128,Ecole Mohammadia d'Ingénieurs ,EMI ,Université Mohammed V,Rabat,Mohammadia Engineering School
+129,Ecole Nationale Supérieure d'Informatique et d'Analyse des Systèmes ,ENSIAS ,Université Mohammed V,Rabat,National Higher School of Computer Science and Systems Analysis
+130,Ecole Nationale Supérieure des Arts et Métiers ,ENSAM ,Université Mohammed V,Rabat,National Higher School of Arts and Crafts
+131,Faculté des Sciences de l'Education ,FSE ,Université Mohammed V,Rabat,Faculty of Educational Sciences
+132,Ecole Normale Supérieure ,ENS ,Université Mohammed V,Rabat,Higher Normal School
+133,Ecole Supérieure de Technologie ,EST ,Université Mohammed V,Salé,Higher School of Technology
+134,Institut Scientifique ,IS ,Université Mohammed V,Rabat,Scientific Institute
+135,Institut d'Etudes et de Recherches pour l'Arabisation ,IERA ,Université Mohammed V,Rabat,Institute of Studies and Research for Arabization
+136,"Institut Universitaire des Etudes Africaines, Euro-méditerranéennes et Ibero-américaines",IUEAMIA ,Université Mohammed V,Rabat,"University Institute of African, Euro-Mediterranean and Ibero-American Studies"
+137,Université Moulay Ismail,UMI,Université Moulay Ismail,Meknès,Moulay Ismail University
+138,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Moulay Ismail,Meknès,"Faculty of Legal, Economic and Social Sciences"
+139,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Moulay Ismail,Meknès,Faculty of Letters and Humanities
+140,Faculté des Sciences ,FS ,Université Moulay Ismail,Meknès,Faculty of Sciences
+141,Faculté Polydisciplinaire ,FP ,Université Moulay Ismail,Errachidia,Multidisciplinary Faculty
+142,Faculté des Sciences et Techniques ,FST ,Université Moulay Ismail,Errachidia,Faculty of Sciences and Techniques
+143,Faculté de Médecine et Pharmacie ,FMP ,Université Moulay Ismail,Errachidia,Faculté de Médecine et Pharmacie
+144,Ecole Nationale Supérieure des Arts et Métiers ,ENSAM ,Université Moulay Ismail,Meknès,National Higher School of Arts and Crafts
+145,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Moulay Ismail,Meknès,National School of Commerce and Management
+146,Ecole Normale Supérieure ,ENS ,Université Moulay Ismail,Meknès,Higher Normal School
+147,Ecole Supérieure de Technologie ,EST ,Université Moulay Ismail,Meknès,Higher School of Technology
+148,Université Sidi Mohamed Ben Abdellah,USMBA,Université Sidi Mohamed Ben Abdellah ,Fès,Sidi Mohamed Ben Abdellah University
+149,Faculté Chariâa ,Faculté Chariâa ,Université Sidi Mohamed Ben Abdellah,Fès,Faculty of Islamic Law (Sharia)
+150,"Faculté des Sciences Juridiques, Economiques et Sociales ",FSJES ,Université Sidi Mohamed Ben Abdellah,Fès,"Faculty of Legal, Economic and Social Sciences"
+151,Faculté des Lettres et des Sciences Humaines Dhar El Mahraz ,FLSH Dhar El Mahraz ,Université Sidi Mohamed Ben Abdellah,Fès,Faculté des Lettres et des Sciences Humaines Dhar El Mahraz
+152,Faculté des Lettres et des Sciences Humaines Sais ,FLSH Sais ,Université Sidi Mohamed Ben Abdellah,Fès,Faculté des Lettres et des Sciences Humaines Sais
+153,Faculté des Sciences Dhar El Mahraz ,FS Dhar El Mahraz ,Université Sidi Mohamed Ben Abdellah,Fès,Faculté des Sciences Dhar El Mahraz
+154,Faculté Polydisciplinaire ,FP ,Université Sidi Mohamed Ben Abdellah,Taza,Multidisciplinary Faculty
+155,Faculté des Sciences et Techniques Sais ,FST Sais ,Université Sidi Mohamed Ben Abdellah,Fès,Faculté des Sciences et Techniques Sais
+156,"Faculté de Médecine, de Pharmacie et de Médecine Dentaire ",FMPMD ,Université Sidi Mohamed Ben Abdellah,Fès,"Faculté de Médecine, de Pharmacie et de Médecine Dentaire"
+157,Ecole Nationale des Sciences Appliquées ,ENSA Fès,Université Sidi Mohamed Ben Abdellah,Fès,National School of Applied Sciences
+158,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Sidi Mohamed Ben Abdellah,Fès,National School of Commerce and Management
+159,Ecole Normale Supérieure ,ENS ,Université Sidi Mohamed Ben Abdellah,Fès,Higher Normal School
+160,Ecole Supérieure de Technologie ,EST ,Université Sidi Mohamed Ben Abdellah,Fès,Higher School of Technology
+161,Institut des Sciences de Sport ,ISS ,Université Sidi Mohamed Ben Abdellah,Fès,Institut des Sciences de Sport
+162,Université Sultan Moulay Slimane,USMI, Université Sultan Moulay Slimane,Béni Mellal,Sultan Moulay Slimane University
+163,Faculté d'Economie et de Gestion  ,FEG ,Université Sultan Moulay Slimane,Béni Mellal,Faculty of Economics and Management
+164,Faculté des Lettres et des Sciences Humaines ,FLSH ,Université Sultan Moulay Slimane,Béni Mellal,Faculty of Letters and Humanities
+165,Faculté Polydisciplinaire ,FP,Université Sultan Moulay Slimane,Béni Mellal,Multidisciplinary Faculty
+166,Faculté Polydisciplinaire ,FP ,Université Sultan Moulay Slimane,Khouribga,Multidisciplinary Faculty
+167,Faculté des Sciences et Techniques ,FST ,Université Sultan Moulay Slimane,Béni Mellal,Faculty of Sciences and Techniques
+168,Faculté de Médecine et de Pharmacie ,FMP ,Université Sultan Moulay Slimane,Béni Mellal,Faculty of Medicine and Pharmacy
+169,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Sultan Moulay Slimane,Béni Mellal,National School of Applied Sciences
+170,Ecole Nationale des Sciences Appliquées ,ENSA ,Université Sultan Moulay Slimane,Khouribga,National School of Applied Sciences
+171,Ecole Nationale de Commerce et de Gestion ,ENCG ,Université Sultan Moulay Slimane,Béni Mellal,National School of Commerce and Management
+172,Ecole Supérieure de l'Education et de la Formation ,ESEF ,Université Sultan Moulay Slimane,Béni Mellal,Higher School of Education and Training
+173,Ecole Supérieure de Technologie ,EST ,Université Sultan Moulay Slimane,Béni Mellal,Higher School of Technology
+174,Ecole Supérieure de Technologie ,EST ,Université Sultan Moulay Slimane,Khénifra,Higher School of Technology
+175,Ecole Supérieure de Technologie ,EST ,Université Sultan Moulay Slimane,Fquih Ben Salah,Higher School of Technology
