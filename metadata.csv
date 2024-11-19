@@ -54,7 +54,7 @@ author_id,author_name,affiliation_full_name,city,country
 24464131300,"Ajhoun, Rachida"," Laboratoire Alkhawarizmi de Genie Informatique, ENSIAS, Agdal Rabat, BP 713, Morocco",Rabat,morocco
 55502014900,"Enzili, Mustapha","Renewable Energy Development Center (L'DER), Guetiz - Marrakech, PO. BOX 509, Morocco",Marrakech,morocco
 8864913100,"Aharouch, L","University Ibn Zohr, Faculté Polydisciplinaire Quarzazate, Maroc, B.P. 638 Quarzazate, Morocco",Ouarzazate,morocco
-8586238300,"Azroul, E"," Département de Mathématiques et Informatique, Faculté des Sciences Dhar-Mahraz, Maroc, B.P. 1796 Atlas Fés, Morocco",,morocco
+8586238300,"Azroul, E"," Département de Mathématiques et Informatique, Faculté des Sciences Dhar-Mahraz, Maroc, B.P. 1796 Atlas Fés, Morocco",Fès,morocco
 24724519600,"Jamouli, Hicham","Université Ibn Zohr, Ecole Nationale des Sciences Appliquées d'Agadir, 80000 Agadir, BP 1136, Morocco",Agadir,morocco
 24767710000,"Alami, Jihane","Laboratoire Conception and Systemes, Faculty of Sciences, Rabat, Morocco",Rabat,morocco
 24821184400,"Aouzale, Noureddine","Electrical Systems and Telecommunication Laboratory, Faculty of Science and Technology of Marrakech, Marrakech, BP549, Morocco",Marrakech,morocco
@@ -86,7 +86,7 @@ author_id,author_name,affiliation_full_name,city,country
 12240226500,"Zerzouf, Abdelfettah"," Laboratoire de Chimie Organique Hétérocyclique, Faculté des Sciences, Université Mohammed v Rabat, Morocco",Rabat,morocco
 36835562000,"Saddiki, N","Faculté des Sciences, Université Mohammed v, Rabat, Morocco",Rabat,morocco
 36134144900,"Taoufik, Imane","Al Akhawayn University, Ifrane, Morocco",,morocco
-16021899700,"Barbri, N","Sensor Electronic and Instrumentation Group, Faculty of Sciences, Physics Department, 11201 Zitoune, Meekness, B.P, Morocco",,morocco
+16021899700,"Barbri, N","Sensor Electronic and Instrumentation Group, Faculty of Sciences, Physics Department, 11201 Zitoune, Meekness, B.P, Morocco",Meknès,morocco
 24724519600,"Jamouli, H","Université Ibn Zohr, Ecole Nationale des Sciences Appliques, Agadir, Morocco",Agadir,morocco
 6603090492,"Dzahini, D"," CNESTEN, RP 10001 Rabat, BP 1382, Morocco",Rabat,morocco
 55944424900,"Hami, A"," Mechanical Department, School of Engineers of Mohammadia, Rabat-Agdal, Morocco",Rabat,morocco
@@ -98,7 +98,7 @@ author_id,author_name,affiliation_full_name,city,country
 24830118000,"Meziane, Rachid"," SI2M Laboratory, WiM Team, ENSIAS, Mohamed-V Souissi University, Rabat-Agdal, B.P. 713, Morocco",Rabat,morocco
 6504495627,"HajThami, Rachid"," ENSIAS, Mohamed V-Souissi University, Rabat, B.P. 713, Morocco",Rabat,morocco
 25646692300,"Mouna, S","Communications and Electronic Laboratory, Mohammadia Engeneering Institute, Rabat, Av. Ibn Sina, Morocco",Rabat,morocco
-6505878056,"Ammor, H"," Faculty of Science Abdelmalek Essaadi University, Tetuan 93000, P. O. Box 2121, Morocco",,morocco
+6505878056,"Ammor, H"," Faculty of Science Abdelmalek Essaadi University, Tetuan 93000, P. O. Box 2121, Morocco",Tétouan,morocco
 6505483197,"Benaabidate, L","Faculty of Sciences and Technology, Fez, Morocco",Fès,morocco
 55075867600,"Zian, A"," National Office of Mining and Hydrocarbon, Rabat, Morocco",Rabat,morocco
 26029304400,"Bahi, B","Department of Physics, GSCM-LRIT Laboratory, University of Mohamed V., Rabat, Avenue Ibn Battouta, Morocco",Rabat,morocco
@@ -117,7 +117,7 @@ author_id,author_name,affiliation_full_name,city,country
 23994934400,"Aydi, M"," Dept. of Mathematics, C. P. R., El Jadida, Morocco",El Jadida,morocco
 56971762300,"Lahmer, M","ESTM, Meknes, Morocco",Meknès,morocco
 24528348500,"Belkasmi, M"," ENSIAS, Rabat, Morocco",Rabat,morocco
-6506300968,"Taher, R","Département de Mathématiques et Informatique, Université My Ismail, Beni M'hamed, Méknés, B.P. 4010, Morocco",,morocco
+6506300968,"Taher, R","Département de Mathématiques et Informatique, Université My Ismail, Beni M'hamed, Méknés, B.P. 4010, Morocco",Meknès,morocco
 55805881500,"Fetnassi, M"," Département de Mathématiques et Informatique, Université Mohammed V, Rabat, B.P. 1014, Morocco",Rabat,morocco
 6507509390,"Kchikach, M","Academie Internationale Mohamed VI de l'Aviation Civile, Office Nationale des Aeroports (ONDA) Aéroport Mohammed V, Nouacer, Casablanca, Morocco",Casablanca,morocco
 57191524891,"Menou, A"," Ecole Nationale de l'Industrie Minérale (ENIM), Rabat, Morocco",Rabat,morocco
