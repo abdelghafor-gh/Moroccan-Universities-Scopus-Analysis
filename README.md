@@ -141,8 +141,8 @@ Thanks to the amazing people who have contributed to this project! 💪🚀
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Abdelghafor-az">
-        <img src="https://avatars.githubusercontent.com/Abdelghafor-az" width="80px;" alt="Your Name"/>
+      <a href="https://github.com/abdelghafor-gh">
+        <img src="https://avatars.githubusercontent.com/abdelghafor-gh" width="80px;" alt="Your Name"/>
         <br/>
         <sub><b>Abdelghafor Elgharbaoui</b></sub>
       </a>
@@ -190,15 +190,15 @@ If you have any questions or suggestions, feel free to reach out to any of us!
  **LinkedIn** : [Abdelghafor&#39;s LinkedIn](https://linkedin.com/in/personAprofile)
 
  **Name** : Aymane maghouti
- **Email** : [personB@example.com]()
+ **Email** : [aymanemaghouti16@gmail.com]()
  **LinkedIn** : [Aymane&#39;s LinkedIn](https://linkedin.com/in/personBprofile)
 
  **Name** : Hamza Motassim
- **Email** : [personC@example.com]()
+ **Email** : [motassimhamza99@gmail.com]()
  **LinkedIn** : [Hamza&#39;s LinkedIn](https://linkedin.com/in/personCprofile)
 
  **Name** : Ossama Outmani
- **Email** : [personD@example.com]()
+ **Email** : [ossamaoutmani@gmail.com]()
  **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
 
 ---
