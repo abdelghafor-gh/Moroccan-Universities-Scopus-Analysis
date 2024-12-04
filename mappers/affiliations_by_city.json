@@ -1,0 +1,952 @@
+{
+    "Tétouan": {
+        "2": [
+            "foe",
+            "faculte oussoul eddine",
+            "faculty of fundamentals of religion"
+        ],
+        "4": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "5": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "6": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "13": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "16": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ]
+    },
+    "Tanger": {
+        "3": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "9": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "11": [
+            "fmp",
+            "faculte de medecine et pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "12": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "15": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "17": [
+            "esrft",
+            "ecole superieure roi fahd de traduction",
+            "king fahd higher school of translation"
+        ]
+    },
+    "Larache": {
+        "7": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ]
+    },
+    "Kssar El Kébir": {
+        "8": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ]
+    },
+    "Al Hoceima": {
+        "10": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "14": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ]
+    },
+    "Marrakech": {
+        "19": [
+            "fla",
+            "faculte de la langue arabe",
+            "faculty of arabic language"
+        ],
+        "20": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "22": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "23": [
+            "fs semlalia",
+            "faculte des sciences semlalia",
+            "faculty of sciences semlalia",
+            "faculty of science semlalia",
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "25": [
+            "fst guéliz",
+            "faculte des sciences et techniques gueliz",
+            "faculty of sciences and techniques guéliz",
+            "faculty of science and techniques guéliz",
+            "faculty of sciences and technology guéliz",
+            "faculty of science and technology guéliz"
+        ],
+        "26": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "27": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "29": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "30": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ]
+    },
+    "EL Kelaâ des Sraghna": {
+        "21": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "33": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Safi": {
+        "24": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "28": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "31": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Essaouira": {
+        "32": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "El Jadida": {
+        "35": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "36": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "37": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "39": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "40": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "41": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ]
+    },
+    "Sidi Bennour": {
+        "38": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "42": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Settat": {
+        "44": [
+            "fsjp",
+            "faculte des sciences juridiques et politiques",
+            "faculty of juridical and political sciences"
+        ],
+        "45": [
+            "feg",
+            "faculte d'economie et de gestion",
+            "faculty of economics and management"
+        ],
+        "46": [
+            "flash",
+            "faculte des langues, arts et science humaines",
+            "faculty of languages, arts and human sciences"
+        ],
+        "47": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "49": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "51": [
+            "isss",
+            "institut superieur des sciences de la sante",
+            "higher institute of health sciences"
+        ],
+        "52": [
+            "iss",
+            "institut des sciences du sport",
+            "institute of sports sciences"
+        ]
+    },
+    "Berrechid": {
+        "48": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "50": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ]
+    },
+    "Casablanca": {
+        "54": [
+            "fsjes aïn chock",
+            "faculte des sciences juridiques, economiques et sociales ain chock",
+            "faculty of legal, economic and social sciences of aïn chock"
+        ],
+        "55": [
+            "fsjes aïn sebaa",
+            "faculte des sciences juridiques, economiques et sociales ain sebaa",
+            "faculty of legal, economic and social sciences of aïn sebaa"
+        ],
+        "57": [
+            "flsh aïn chock",
+            "faculte des lettres et des sciences humaines ain chock",
+            "faculty of letters and humanities aïn chock"
+        ],
+        "58": [
+            "flsh ben m'sick",
+            "faculte des lettres et des sciences humaines ben m'sick",
+            "faculty of letters and humanities ben m'sick"
+        ],
+        "60": [
+            "fs aïn chock",
+            "faculte des sciences ain chock",
+            "faculty of sciences aïn chock",
+            "faculty of science aïn chock"
+        ],
+        "61": [
+            "fs ben m'sick",
+            "faculte des sciences ben m'sick",
+            "faculty of sciences ben m'sick",
+            "faculty of science ben m'sick"
+        ],
+        "63": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "64": [
+            "fmd",
+            "faculte de medecine dentaire",
+            "faculty of dental medicine"
+        ],
+        "65": [
+            "ensem",
+            "ecole nationale superieure d'electricite et de mecanique",
+            "national higher school of electricity and mechanics"
+        ],
+        "66": [
+            "ensam",
+            "ecole nationale superieure des arts et metiers",
+            "national higher school of arts and crafts"
+        ],
+        "67": [
+            "ensad",
+            "ecole nationale superieure d'art et design",
+            "national higher school of art and design"
+        ],
+        "68": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "69": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ],
+        "71": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Mohammedia": {
+        "56": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "59": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "62": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "70": [
+            "enset",
+            "ecole normale superieure de l'enseignement technique",
+            "higher normal school of technical education"
+        ]
+    },
+    "Kénitra": {
+        "73": [
+            "fsjp",
+            "faculte des sciences juridiques et politiques",
+            "faculty of juridical and political sciences"
+        ],
+        "74": [
+            "feg",
+            "faculte d'economie et de gestion",
+            "faculty of economics and management"
+        ],
+        "75": [
+            "flla",
+            "facultes des langues, des lettres et des arts",
+            "faculty of languages, letters and arts"
+        ],
+        "76": [
+            "fshs",
+            "faculte des sciences humaines et sociale",
+            "faculty of human and social sciences"
+        ],
+        "77": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "78": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "79": [
+            "ensc",
+            "ecole nationale superieure de chimie",
+            "natinal higher school of chemistry"
+        ],
+        "80": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "81": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ],
+        "82": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ],
+        "83": [
+            "ims",
+            "institut des metiers du sport",
+            "institute of sports professions"
+        ]
+    },
+    "Agadir": {
+        "85": [
+            "faculté chariâa",
+            "faculte chariaa",
+            "faculty of islamic law (sharia)"
+        ],
+        "86": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "89": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "91": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "96": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "99": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "101": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "103": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ],
+        "104": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Ait Melloul": {
+        "87": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "90": [
+            "flash",
+            "faculte des langues, arts et science humaines",
+            "faculty of languages, arts and human sciences"
+        ],
+        "92": [
+            "fsa",
+            "faculte des sciences appliquees",
+            "faculty of applied sciences"
+        ]
+    },
+    "Guelmim": {
+        "88": [
+            "feg",
+            "faculte d'economie et de gestion",
+            "faculty of economics and management"
+        ],
+        "98": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "105": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Ouarzazate": {
+        "93": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ]
+    },
+    "Taroudant": {
+        "94": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "100": [
+            "ensiasd",
+            "ecole nationale superieure de l'intelligence artificielle et sciences des donnees",
+            "national higher school of artificial intelligence and data sciences"
+        ]
+    },
+    "Es-Semara": {
+        "95": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ]
+    },
+    "Laayoune": {
+        "97": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "106": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Dakhla": {
+        "102": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "107": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Oujda": {
+        "109": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "110": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "111": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "113": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "114": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "116": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "117": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ],
+        "118": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Nador": {
+        "112": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "119": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Berkane": {
+        "115": [
+            "ensiad",
+            "ecole nationale superieure de l'intelligence artificielle et du digital",
+            "national higher school of artificial intelligence and digital sciences"
+        ]
+    },
+    "Rabat": {
+        "121": [
+            "fsjes agdal",
+            "faculte des sciences juridiques, economiques et sociales agdal",
+            "faculty of legal, economic and social sciences of agdal"
+        ],
+        "122": [
+            "fsjes souissi",
+            "faculte des sciences juridiques, economiques et sociales souissit",
+            "faculty of legal, economic and social sciences of souissit"
+        ],
+        "124": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "125": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "126": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "127": [
+            "fmd",
+            "faculte de medecine dentaire",
+            "faculty of dental medicine"
+        ],
+        "128": [
+            "emi",
+            "ecole mohammadia d'ingenieurs",
+            "mohammadia engineering school"
+        ],
+        "129": [
+            "ensias",
+            "ecole nationale superieure d'informatique et d'analyse des systemes",
+            "national higher school of computer science and systems analysis"
+        ],
+        "130": [
+            "ensam",
+            "ecole nationale superieure des arts et metiers",
+            "national higher school of arts and crafts"
+        ],
+        "131": [
+            "fse",
+            "faculte des sciences de l'education",
+            "faculty of educational sciences"
+        ],
+        "132": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ],
+        "134": [
+            "is",
+            "institut scientifique",
+            "scientific institute"
+        ],
+        "135": [
+            "iera",
+            "institut d'etudes et de recherches pour l'arabisation",
+            "institute of studies and research for arabization"
+        ],
+        "136": [
+            "iueamia",
+            "institut universitaire des etudes africaines, euro-mediterraneennes et ibero-americaines",
+            "institut universitaire des etudes africaines, euro-méditerranéennes et ibero-américaines"
+        ]
+    },
+    "Salé": {
+        "123": [
+            "fsjes salé",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "133": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Meknès": {
+        "138": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "139": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "140": [
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "144": [
+            "ensam",
+            "ecole nationale superieure des arts et metiers",
+            "national higher school of arts and crafts"
+        ],
+        "145": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "146": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ],
+        "147": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Errachidia": {
+        "141": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "142": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "143": [
+            "fmp",
+            "faculte de medecine et pharmacie",
+            "faculty of medicine and pharmacy"
+        ]
+    },
+    "Fès": {
+        "149": [
+            "faculté chariâa",
+            "faculte chariaa",
+            "faculty of islamic law (sharia)"
+        ],
+        "150": [
+            "fsjes",
+            "faculte des sciences juridiques, economiques et sociales",
+            "faculty of legal, economic and social sciences"
+        ],
+        "151": [
+            "flsh dhar el mahraz",
+            "faculte des lettres et des sciences humaines dhar el mahraz",
+            "faculty of letters and humanities dhar el mahraz"
+        ],
+        "152": [
+            "flsh sais",
+            "faculte des lettres et des sciences humaines sais",
+            "faculty of letters and humanities sais"
+        ],
+        "153": [
+            "fs dhar el mahraz",
+            "faculte des sciences dhar el mahraz",
+            "faculty of sciences dhar el mahraz",
+            "faculty of science dhar el mahraz",
+            "fs",
+            "faculte des sciences",
+            "faculty of sciences",
+            "faculty of science"
+        ],
+        "155": [
+            "fst sais",
+            "faculte des sciences et techniques sais",
+            "faculty of sciences and techniques sais",
+            "faculty of science and techniques sais",
+            "faculty of sciences and technology sais",
+            "faculty of science and technology sais",
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "156": [
+            "fmpmd",
+            "faculte de medecine, de pharmacie et de medecine dentaire",
+            "faculty of dental medicine"
+        ],
+        "157": [
+            "ensa fès",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "158": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "159": [
+            "ens",
+            "ecole normale superieure",
+            "higher normal school"
+        ],
+        "160": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ],
+        "161": [
+            "iss",
+            "institut des sciences de sport",
+            "institut des sciences de sport"
+        ]
+    },
+    "Taza": {
+        "154": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ]
+    },
+    "Béni Mellal": {
+        "163": [
+            "feg",
+            "faculte d'economie et de gestion",
+            "faculty of economics and management"
+        ],
+        "164": [
+            "flsh",
+            "faculte des lettres et des sciences humaines",
+            "faculty of letters and humanities"
+        ],
+        "165": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "167": [
+            "fst",
+            "faculte des sciences et techniques",
+            "faculty of sciences and techniques",
+            "faculty of science and techniques",
+            "faculty of sciences and technology",
+            "faculty of science and technology"
+        ],
+        "168": [
+            "fmp",
+            "faculte de medecine et de pharmacie",
+            "faculty of medicine and pharmacy"
+        ],
+        "169": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ],
+        "171": [
+            "encg",
+            "ecole nationale de commerce et de gestion",
+            "national school of commerce and management"
+        ],
+        "172": [
+            "esef",
+            "ecole superieure de l'education et de la formation",
+            "higher school of education and training"
+        ],
+        "173": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Khouribga": {
+        "166": [
+            "fp",
+            "faculte polydisciplinaire",
+            "polydisciplinary faculty",
+            "multidisciplinary faculty"
+        ],
+        "170": [
+            "ensa",
+            "ecole nationale des sciences appliquees",
+            "national school of applied sciences"
+        ]
+    },
+    "Khénifra": {
+        "174": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    },
+    "Fquih Ben Salah": {
+        "175": [
+            "est",
+            "ecole superieure de technologie",
+            "higher school of technology"
+        ]
+    }
+}

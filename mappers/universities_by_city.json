@@ -1,0 +1,110 @@
+{
+    "Tétouan": {
+        "1": [
+            "uae",
+            "universite abdelmalek essaadi",
+            "abdelmalek essaadi university",
+            "university abdelmalek essaadi",
+            "university of abdelmalek essaadi"
+        ]
+    },
+    "Marrakech": {
+        "18": [
+            "uca",
+            "universite cadi ayyad",
+            "cadi ayyad university",
+            "university cadi ayyad",
+            "university of cadi ayyad"
+        ]
+    },
+    "El Jadida": {
+        "34": [
+            "ucd",
+            "universite chouaib doukkali",
+            "chouaib doukkali university",
+            "university chouaib doukkali",
+            "university of chouaib doukkali"
+        ]
+    },
+    "Settat": {
+        "43": [
+            "uh1",
+            "universite hassan 1",
+            "hassan 1 university",
+            "university hassan 1",
+            "university of hassan 1"
+        ]
+    },
+    "Casablanca": {
+        "53": [
+            "uh2",
+            "universite hassan 2",
+            "hassan 2 university",
+            "university hassan 2",
+            "university of hassan 2"
+        ]
+    },
+    "Kénitra": {
+        "72": [
+            "uit",
+            "universite ibn tofail",
+            "ibn tofail university",
+            "university ibn tofail",
+            "university of ibn tofail"
+        ]
+    },
+    "Agadir": {
+        "84": [
+            "uiz",
+            "universite ibn zohr",
+            "ibn zohr university",
+            "university ibn zohr",
+            "university of ibn zohr"
+        ]
+    },
+    "Oujda": {
+        "108": [
+            "um1",
+            "universite mohammed premier",
+            "mohammed 1 university",
+            "university mohammed 1",
+            "university of mohammed 1"
+        ]
+    },
+    "Rabat": {
+        "120": [
+            "umv",
+            "universite mohammed 5",
+            "mohammed 5 university",
+            "university mohammed 5",
+            "university of mohammed 5"
+        ]
+    },
+    "Meknès": {
+        "137": [
+            "umi",
+            "universite moulay ismail",
+            "moulay ismail university",
+            "university moulay ismail",
+            "university of moulay ismail"
+        ]
+    },
+    "Fès": {
+        "148": [
+            "usmba",
+            "universite sidi mohamed ben abdellah",
+            "sidi mohamed ben abdellah university",
+            "university sidi mohamed ben abdellah",
+            "university of sidi mohamed ben abdellah"
+        ]
+    },
+    "Béni Mellal": {
+        "162": [
+            "usmi",
+            "universite sultan moulay slimane",
+            "sultan moulay slimane university",
+            "university sultan moulay slimane",
+            "university of sultan moulay slimane"
+        ]
+    }
+}
