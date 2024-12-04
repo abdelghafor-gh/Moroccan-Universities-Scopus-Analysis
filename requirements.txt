@@ -1,2 +1,6 @@
+apache-airflow
+ipykernel
 numpy
 pandas
+json
+unidecode

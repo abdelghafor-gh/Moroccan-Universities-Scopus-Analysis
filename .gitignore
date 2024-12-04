@@ -1,2 +1,6 @@
 .venv/
 notebooks/data_exploration.ipynb
+notebooks/output/
+dags/
+scripts/
+mappers/
