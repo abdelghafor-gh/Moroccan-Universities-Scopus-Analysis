@@ -21,6 +21,7 @@
 ├── data/                  # Raw and transformed data files
 │   ├── raw/               # Raw data files from Scopus
 │   └── transformed/       # Transformed data files used for analysis
+├── dags/                  # Airflow DAGs for scheduling data pipelines
 ├── notebooks/             # Jupyter notebooks for data exploration & cleaning
 ├── models/                # Data model and schema definitions
 ├── dashboards/            # Power BI files (.pbix)
