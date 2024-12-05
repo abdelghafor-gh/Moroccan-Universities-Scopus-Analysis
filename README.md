@@ -35,16 +35,16 @@
 
 ## ⚙️ Tech Stack
 
-| Tool/Technology        | Description                                          |
-| ---------------------- | ---------------------------------------------------- |
-| 🐍**Python**     | Data cleaning, transformation, and preprocessing     |
-| 🐘**PostgreSQL** | Data warehousing and modeling                        |
-| ❄️**Snowflake** | Data warehousing and modeling                        |
-| 🔄**Apache Airflow**    | Data ingestion and transformation orchestration      |
-| 📝**Jupyter**    | Interactive data exploration and transformation        |
-| 📈**Power BI**   | Interactive dashboards and advanced visual analytics |
-| 📊**Pandas**     | Data manipulation and analysis                       |
-| 🛠️**DAX**      | Power BI data analysis expressions                   |
+| Tool/Technology            | Description                                          |
+| -------------------------- | ---------------------------------------------------- |
+| 🐍**Python**         | Data cleaning, transformation, and preprocessing     |
+| 🐘**PostgreSQL**     | Data warehousing and modeling - option 1             |
+| ❄️**Snowflake**    | Data warehousing and modeling - option 2             |
+| 🔄**Apache Airflow** | Data ingestion and transformation orchestration      |
+| 📝**Jupyter**        | Interactive data exploration and transformation      |
+| 📈**Power BI**       | Interactive dashboards and advanced visual analytics |
+| 📊**Pandas**         | Data manipulation and analysis                       |
+| 🛠️**DAX**          | Power BI data analysis expressions                   |
 
 ---
 
@@ -100,6 +100,7 @@ We support two database options: PostgreSQL 🐘 and Snowflake ❄️. Choose yo
 #### Option 1: PostgreSQL Setup 🐘
 
 1. Create a `.env` file with PostgreSQL credentials ⚙️:
+
    ```env
    DB_TYPE=postgres
    POSTGRES_USER=your_username
@@ -108,13 +109,13 @@ We support two database options: PostgreSQL 🐘 and Snowflake ❄️. Choose yo
    POSTGRES_PORT=5432
    POSTGRES_DB=scopus_analysis
    ```
-
 2. Create the database 📦:
+
    ```sql
    CREATE DATABASE scopus_analysis;
    ```
-
 3. Initialize the schema 🏗️:
+
    ```bash
    python models/init_db.py
    ```
@@ -122,6 +123,7 @@ We support two database options: PostgreSQL 🐘 and Snowflake ❄️. Choose yo
 #### Option 2: Snowflake Setup ❄️
 
 1. Create a `.env` file with Snowflake credentials ⚙️:
+
    ```env
    DB_TYPE=snowflake
    SNOWFLAKE_USER=your_username
@@ -130,18 +132,18 @@ We support two database options: PostgreSQL 🐘 and Snowflake ❄️. Choose yo
    SNOWFLAKE_WAREHOUSE=your_warehouse
    SNOWFLAKE_DATABASE=SCOPUS_ANALYSIS
    SNOWFLAKE_SCHEMA=PUBLIC
-   ```   
-
+   ```
 2. Initialize Snowflake Schema 📦:
+
    ```sql
    -- Create the database
    CREATE DATABASE SCOPUS_ANALYSIS_DB;
-   
+
    -- Create the data warehouse
    CREATE WAREHOUSE SCOPUS_ANALYSIS_WH;
    ```
-
 3. Initialize the schema 🏗️:
+
    ```bash
    python models/init_db.py
    ```
