@@ -5,16 +5,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 import os
-
-def get_project_root():
-    """Get the project root directory from the script location"""
-    current_dir = Path(os.path.dirname(os.path.abspath(__file__)))
-    return current_dir.parent
-
-def create_directories():
-    """Create necessary directories if they don't exist"""
-    project_root = get_project_root()
-    Path(project_root / "mappers").mkdir(parents=True, exist_ok=True)
+from utils import get_project_root, create_directories
 
 def normalize_digits(affiliation):
     """Normalize numerical representations in text"""

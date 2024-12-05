@@ -2,11 +2,7 @@ import subprocess
 import sys
 from pathlib import Path
 import os
-
-def get_project_root():
-    """Get the project root directory from the script location"""
-    current_dir = Path(os.path.dirname(os.path.abspath(__file__)))
-    return current_dir.parent
+from utils import get_project_root
 
 def run_script(script_path):
     """Run a Python script and handle any errors"""

@@ -1,4 +1,5 @@
 .venv/
 notebooks/data_exploration.ipynb
 notebooks/output/
+scripts/__pycache__/
 dags/
