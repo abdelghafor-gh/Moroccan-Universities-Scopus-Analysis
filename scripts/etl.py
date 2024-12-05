@@ -5,6 +5,7 @@ import re
 import unicodedata
 from pathlib import Path
 import os
+from tqdm import tqdm
 from utils import get_project_root, create_directories
 
 # Configure logging
@@ -12,106 +13,6 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-
-def extract_author_id_name(auth_id_name):
-    """Extract author ID and name from the combined string"""
-    # extract author name
-    name_pattern = r"[A-Za-záéíóúÁÉÍÓÚñÑ]+,\s[A-Za-záéíóúÁÉÍÓÚñÑ]+"
-    name_match = re.search(name_pattern, auth_id_name)
-
-    # extract id
-    id_match = re.search(r'\((\d+)\)', auth_id_name)
-    
-    if id_match and name_match:
-        author_id = id_match.group(1)
-        author_name = name_match.group()
-        return author_id, author_name
-    else:
-        return None, None
-
-def extract_country_name(affiliation_full_name):
-    """Extract country name from the full affiliation string"""
-    try:
-        parts = affiliation_full_name.lower().split(',')
-        country = parts[-1].strip().lower()
-        return country
-    except:
-        return None
-
-def extract_city_name(affiliation_full_name, cities_mapping):
-    """Extract and map city name from the full affiliation string"""
-    affiliation = affiliation_full_name.lower()
-    parts = affiliation.split(',')
-    
-    expected_city = None
-    if len(parts) > 1:
-        expected_city = parts[-2].strip().lower()
-        for key, value in cities_mapping.items():
-            if key == expected_city:
-                return value
-    
-    for key, value in cities_mapping.items():
-        if key in affiliation:
-            return value
-    
-    return None
-
-def remove_accents(text):
-    """Remove accents from text"""
-    normalized_text = unicodedata.normalize('NFKD', text)
-    return ''.join(char for char in normalized_text if not unicodedata.combining(char))
-
-def normalize_digits(affiliation):
-    """Normalize numerical representations in text"""
-    patterns = {
-        r'\b(first|1st|1er|i)\b': '1',  # Variations of 1
-        r'\b(second|2nd|ii)\b': '2',    # Variations of 2
-        r'\b(fifth|5th|v)\b': '5'       # Variations of 5
-    }
-    
-    normalized_affiliation = affiliation
-    for pattern, replacement in patterns.items():
-        normalized_affiliation = re.sub(pattern, replacement, normalized_affiliation)
-    return normalized_affiliation
-
-def normalize_affiliation(affiliation):
-    """Normalize affiliation text"""
-    affiliation = affiliation.lower()
-    affiliation = remove_accents(affiliation)
-    affiliation = normalize_digits(affiliation)
-    return affiliation
-
-def extract_affiliation_name(affiliation_full_name, city, affiliations_by_city, universities_by_city):
-    """Extract standardized affiliation name"""
-    if not city:
-        logging.debug(f"No city found for affiliation: {affiliation_full_name}")
-        return None, None
-    
-    affiliation = normalize_affiliation(affiliation_full_name)
-    logging.debug(f"Normalized affiliation: {affiliation}")
-
-    if city in affiliations_by_city:
-        for aff_id, variations in affiliations_by_city[city].items():
-            for variation in variations:
-                if variation in affiliation:
-                    logging.info(f"Found affiliation match: {variations[-1]} (ID: {aff_id}) for '{affiliation_full_name}'")
-                    return aff_id, variations[-1]  # Return ID and English name
-
-    if city in universities_by_city:
-        for univ_id, variations in universities_by_city[city].items():
-            for variation in variations:
-                if variation in affiliation:
-                    logging.info(f"Found university match: {variations[-1]} (ID: {univ_id}) for '{affiliation_full_name}'")
-                    return univ_id, variations[-1]  # Return ID and English name
-    
-    logging.warning(f"No match found for affiliation: {affiliation_full_name} in city: {city}")
-import pandas as pd
-import json
-import re
-import unicodedata
-from pathlib import Path
-import os
-from utils import get_project_root, create_directories
 
 def extract_author_id_name(auth_id_name):
     """Extract author ID and name from the combined string"""
@@ -207,7 +108,7 @@ def transform_data(df, cities_mapping, affiliations_by_city, universities_by_cit
     """Transform the data using the mapping files"""
     new_df = pd.DataFrame(columns=["author_id", "author_name", "affiliation_full_name", "city", "affiliation", "affiliation_id"])
 
-    for _, row in df.iterrows():
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Transforming rows", unit="row", leave=False):
         authors_with_ids = row["Author full names"].split(';')
         raw_affiliations = row["Affiliations"].split(';')
         
@@ -269,24 +170,34 @@ def load_mapping_files():
     return cities_mapping, affiliations_by_city, universities_by_city
 
 def main():
-    print("Loading mapping files...")
+    print("\nLoading mapping files...")
     cities_mapping, affiliations_by_city, universities_by_city = load_mapping_files()
     
-    print("Reading input data...")
+    print("Processing all files in scopus directory...")
     project_root = get_project_root()
-    df = pd.read_csv(project_root / "data/raw/scopus/2023.csv")
-    
-    print("Transforming data...")
-    transformed_df = transform_data(df, cities_mapping, affiliations_by_city, universities_by_city)
+    scopus_dir = project_root / "data/raw/scopus"
+    transformed_dir = project_root / "data/transformed"
     
     # Create output directory if it doesn't exist
     create_directories()
     
-    # Save transformed data
-    output_path = project_root / "data/transformed/transformed_23.csv"
-    transformed_df.to_csv(output_path, index=False)
-    print(f"Transformed data saved to {output_path}")
-    print("ETL process completed successfully!")
+    # Get list of CSV files
+    csv_files = list(scopus_dir.glob("*.csv"))
+    
+    # Process all CSV files in the scopus directory with progress bar
+    for file_path in tqdm(csv_files, desc="Overall progress", unit="file"):
+        print(f"\nProcessing {file_path.name}...")
+        df = pd.read_csv(file_path)
+        
+        print(f"Transforming {file_path.name}...")
+        transformed_df = transform_data(df, cities_mapping, affiliations_by_city, universities_by_city)
+        
+        # Save transformed data with transformed_ prefix
+        output_path = transformed_dir / f"transformed_{file_path.name}"
+        transformed_df.to_csv(output_path, index=False)
+        print(f"Transformed data saved to {output_path}")
+    
+    print("\nETL process completed successfully!")
 
 if __name__ == "__main__":
     main()

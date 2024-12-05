@@ -2,4 +2,4 @@
 models/.env
 notebooks/output/
 scripts/__pycache__/
-
+docker-compose.yaml
