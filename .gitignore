@@ -1,5 +1,5 @@
 .venv/
-notebooks/data_exploration.ipynb
+models/.env
 notebooks/output/
 scripts/__pycache__/
 
