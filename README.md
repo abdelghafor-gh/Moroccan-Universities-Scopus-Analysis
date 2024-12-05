@@ -88,16 +88,66 @@ source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Load Data into PostgreSQL
+### 3. Load Data into Database 🗄️
 
-1. Create a PostgreSQL database:
+We support two database options: PostgreSQL 🐘 and Snowflake ❄️. Choose your preferred option:
+
+#### Option 1: PostgreSQL Setup 🐘
+
+1. Create a `.env` file with PostgreSQL credentials ⚙️:
+   ```env
+   DB_TYPE=postgres
+   POSTGRES_USER=your_username
+   POSTGRES_PASSWORD=your_password
+   POSTGRES_HOST=localhost
+   POSTGRES_PORT=5432
+   POSTGRES_DB=scopus_analysis
+   ```
+
+2. Create the database 📦:
    ```sql
    CREATE DATABASE scopus_analysis;
    ```
-2. Run the ETL scripts to populate the database:
+
+3. Initialize the schema 🏗️:
    ```bash
-   python scripts/etl_pipeline.py
+   python models/init_db.py
    ```
+
+#### Option 2: Snowflake Setup ❄️
+
+1. Create a `.env` file with Snowflake credentials ⚙️:
+   ```env
+   DB_TYPE=snowflake
+   SNOWFLAKE_USER=your_username
+   SNOWFLAKE_PASSWORD=your_password
+   SNOWFLAKE_ACCOUNT=your_account
+   SNOWFLAKE_WAREHOUSE=your_warehouse
+   SNOWFLAKE_DATABASE=SCOPUS_ANALYSIS
+   SNOWFLAKE_SCHEMA=PUBLIC
+   ```   
+
+2. Initialize Snowflake Schema 📦:
+   ```sql
+   -- Create the database
+   CREATE DATABASE SCOPUS_ANALYSIS_DB;
+   
+   -- Create the data warehouse
+   CREATE WAREHOUSE SCOPUS_ANALYSIS_WH;
+   ```
+
+3. Initialize the schema 🏗️:
+   ```bash
+   python models/init_db.py
+   ```
+
+The schema will be automatically created based on SQLAlchemy models defined in `models/schema.py`. After setup, run the ETL pipeline 🔄:
+
+#### Run ETL Pipeline
+
+```bash
+python scripts/run_pipeline.py
+```
 
 ### 4. Open Power BI Dashboard
 
@@ -196,6 +246,16 @@ If you have any questions or suggestions, feel free to reach out to any of us!
  **Name** : Hamza Motassim
  **Email** : [motassimhamza99@gmail.com]()
  **LinkedIn** : [Hamza&#39;s LinkedIn](https://linkedin.com/in/personCprofile)
+
+ **Name** : Ossama Outmani
+ **Email** : [ossamaoutmani@gmail.com]()
+ **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
+nkedIn](https://linkedin.com/in/personCprofile)
+
+ **Name** : Ossama Outmani
+ **Email** : [ossamaoutmani@gmail.com]()
+ **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
+nkedIn](https://linkedin.com/in/personCprofile)
 
  **Name** : Ossama Outmani
  **Email** : [ossamaoutmani@gmail.com]()
