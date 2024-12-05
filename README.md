@@ -19,13 +19,15 @@
 ```
 📁 Moroccan-Universities-Scopus-Analysis/
 ├── data/                  # Raw and transformed data files
+│   ├── raw/               # Raw data files from Scopus
+│   └── transformed/       # Transformed data files used for analysis
 ├── notebooks/             # Jupyter notebooks for data exploration & cleaning
 ├── models/                # Data model and schema definitions
 ├── dashboards/            # Power BI files (.pbix)
+├── mappers/               # json files used for mapping Moroccan universities, affiliations and cities
 ├── scripts/               # ETL scripts for data transformation
 ├── reports/               # Exported reports and visualizations
-├── README.md              # Project documentation
-└── LICENSE                # License information
+└── README.md              # Project documentation
 ```
 
 ---
@@ -36,9 +38,11 @@
 | ---------------------- | ---------------------------------------------------- |
 | 🐍**Python**     | Data cleaning, transformation, and preprocessing     |
 | 🐘**PostgreSQL** | Data warehousing and modeling                        |
+| ❄️**Snowflake** | Data warehousing and modeling                        |
+| 🔄**Apache Airflow**    | Data ingestion and transformation orchestration      |
+| 📝**Jupyter**    | Interactive data exploration and transformation        |
 | 📈**Power BI**   | Interactive dashboards and advanced visual analytics |
 | 📊**Pandas**     | Data manipulation and analysis                       |
-| 📍**Geopandas**  | Spatial analysis and mapping                         |
 | 🛠️**DAX**      | Power BI data analysis expressions                   |
 
 ---
@@ -175,12 +179,6 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes: `git commit -m "Add your feature"`
 4. Push to the branch: `git push origin feature/your-feature`
 5. Create a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE]() file for details.
 
 ---
 
