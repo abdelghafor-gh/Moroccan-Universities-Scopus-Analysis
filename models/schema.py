@@ -14,7 +14,6 @@ class Publication(Base):
     cited_by = Column(Integer)
     document_type = Column(String)
     source_title = Column(String)
-    abstract = Column(String)
     doi = Column(String)
     link = Column(String)
     

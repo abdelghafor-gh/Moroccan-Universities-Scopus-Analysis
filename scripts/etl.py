@@ -148,7 +148,7 @@ def transform_data(df, cities_mapping, affiliations_by_city, universities_by_cit
         })
 
         new_df = pd.concat([new_df, data], ignore_index=True)
-        
+    
     return new_df
 
 def load_mapping_files():
