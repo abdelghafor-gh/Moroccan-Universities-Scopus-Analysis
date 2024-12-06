@@ -21,7 +21,7 @@ def transform_sjr_csv():
                      encoding='utf-8')
 
     # Clean column names
-    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('.', '').str.lower()
+    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('.', '')
 
     # Write to new CSV file with comma separator
     df.to_csv(output_file, 
@@ -30,7 +30,7 @@ def transform_sjr_csv():
               encoding='utf-8',
               quoting=1)  # QUOTE_ALL to handle fields that contain commas
 
-    print(f"File transformed successfully. Output saved to: {output_file}")
+    print(f"\nFile transformed successfully. Output saved to: {output_file.relative_to(project_root)}")
     return df
 
 if __name__ == "__main__":

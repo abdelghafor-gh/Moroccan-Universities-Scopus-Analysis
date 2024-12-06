@@ -12,10 +12,19 @@ def create_directories():
     
     # List of directories to create
     directories = [
-        project_root / "data/transformed",
-        project_root / "mappers"
+        # Data directories
+        project_root / "data/transformed",  # Transformed source files
+        project_root / "data/final",        # Combined data
+        project_root / "data/fact",         # Fact tables
+        project_root / "data/dimensions",   # Dimension tables
+        
+        # Support directories
+        project_root / "mappers",           # Mapping files
+        # project_root / "logs"               # Log files (for future use)
     ]
     
     # Create each directory if it doesn't exist
     for directory in directories:
         directory.mkdir(parents=True, exist_ok=True)
+        
+    print(" Project directories created successfully")

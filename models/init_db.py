@@ -8,6 +8,10 @@ def init_database():
         db = DatabaseConnection()
         db.connect()
         
+        # Drop all tables
+        Base.metadata.drop_all(db.engine)
+        print("✅ Existing tables dropped successfully!")
+        
         # Create all tables defined in schema.py
         Base.metadata.create_all(db.engine)
         print("✅ Database schema created successfully!")

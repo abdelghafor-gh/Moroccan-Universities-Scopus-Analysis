@@ -106,13 +106,17 @@ def extract_affiliation_name(affiliation_full_name, city, affiliations_by_city, 
 
 def transform_data(df, cities_mapping, affiliations_by_city, universities_by_city):
     """Transform the data using the mapping files"""
-    new_df = pd.DataFrame(columns=["author_id", "author_name", "affiliation_full_name", "city", "affiliation", "affiliation_id"])
+    new_df = pd.DataFrame(columns=[
+        "Author ID", "Author Name", "Affiliation ID", "Title", "Year",
+        "Volume", "Issue", "ISSN", "Document Type", "Source title", "DOI", "Link",
+        "PubMed ID", "Language of Original Document"
+    ])
 
     for _, row in tqdm(df.iterrows(), total=len(df), desc="Transforming rows", unit="row", leave=False):
         authors_with_ids = row["Author full names"].split(';')
         raw_affiliations = row["Affiliations"].split(';')
         
-        ids, author_names, affiliations_full_name, cities, affiliations, affiliation_ids = [], [], [], [], [], []
+        ids, names, affiliation_ids = [], [], []
         
         for auth_id_name, aff in zip(authors_with_ids, raw_affiliations):
             author_id, author_name = extract_author_id_name(auth_id_name)
@@ -128,26 +132,35 @@ def transform_data(df, cities_mapping, affiliations_by_city, universities_by_cit
             # Extract city
             city = extract_city_name(aff, cities_mapping)
 
-            # Extract affiliation and aff id
-            aff_id, affiliation = extract_affiliation_name(aff, city, affiliations_by_city, universities_by_city)
+            # Extract affiliation id only
+            aff_id, _ = extract_affiliation_name(aff, city, affiliations_by_city, universities_by_city)
 
             ids.append(author_id)
-            author_names.append(author_name)
-            affiliations_full_name.append(aff)
-            cities.append(city)
+            names.append(author_name)
             affiliation_ids.append(aff_id)
-            affiliations.append(affiliation)
 
-        data = pd.DataFrame({
-            "author_id": ids,
-            "author_name": author_names,
-            "affiliation_full_name": affiliations_full_name,
-            "city": cities,
-            "affiliation": affiliations,
-            "affiliation_id": affiliation_ids
-        })
+        # Only proceed if we found valid Moroccan authors
+        if ids:
+            # Get publication details
+            pub_data = {
+                "Author ID": ids,
+                "Author Name": names,
+                "Affiliation ID": affiliation_ids,
+                "Title": [row.get("Title", "")] * len(ids),
+                "Year": [row.get("Year", None)] * len(ids),
+                "Volume": [row.get("Volume", "")] * len(ids),
+                "Issue": [row.get("Issue", "")] * len(ids),
+                "ISSN": [row.get("ISSN", "")] * len(ids),
+                "Document Type": [row.get("Document Type", "")] * len(ids),
+                "Source title": [row.get("Source title", "")] * len(ids),
+                "DOI": [row.get("DOI", "")] * len(ids),
+                "Link": [row.get("Link", "")] * len(ids),
+                "PubMed ID": [row.get("PubMed ID", "")] * len(ids),
+                "Language of Original Document": [row.get("Language of Original Document", "")] * len(ids)
+            }
 
-        new_df = pd.concat([new_df, data], ignore_index=True)
+            data = pd.DataFrame(pub_data)
+            new_df = pd.concat([new_df, data], ignore_index=True)
     
     return new_df
 

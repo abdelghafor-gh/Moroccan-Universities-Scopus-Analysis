@@ -31,7 +31,7 @@ def combine_transformed_files():
     # Read and combine all transformed files
     for file_path in tqdm(transformed_files, desc="Reading files", unit="file"):
         # Read CSV with affiliation_id as integer
-        df = pd.read_csv(file_path, dtype={'affiliation_id': 'Int64'})
+        df = pd.read_csv(file_path, dtype={'Affiliation ID': 'Int64'})
         all_dfs.append(df)
     
     print("Combining all dataframes...")
@@ -39,10 +39,10 @@ def combine_transformed_files():
     
     print("Filtering out rows with empty affiliations...")
     # Filter out rows where either affiliation or affiliation_id is empty/null
-    filtered_df = combined_df.dropna(subset=['affiliation', 'affiliation_id'])
+    filtered_df = combined_df.dropna(subset=['Affiliation ID'])
     
     # Convert affiliation_id to integer after filtering
-    filtered_df['affiliation_id'] = filtered_df['affiliation_id'].astype('int')
+    filtered_df['Affiliation ID'] = filtered_df['Affiliation ID'].astype('int')
     
     # Print statistics
     total_rows = len(combined_df)
@@ -56,7 +56,7 @@ def combine_transformed_files():
     print(f"Percentage of rows kept: {(filtered_rows/total_rows*100):.2f}%")
     
     # Save the combined and filtered data
-    output_path = output_dir / "combined_filtered_data.csv"
+    output_path = output_dir / "combined_publications.csv"
     filtered_df.to_csv(output_path, index=False)
     print(f"\nCombined and filtered data saved to: {output_path}")
 

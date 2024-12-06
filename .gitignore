@@ -1,5 +1,6 @@
 .venv/
 models/.env
+models/__pycache__/
 notebooks/output/
 scripts/__pycache__/
 docker-compose.yaml
