@@ -17,26 +17,23 @@ def build_author_dimension(combined_df):
 
 def build_affiliation_dimension(affiliation_df):
     """Build affiliation dimension table from affiliations.csv"""
-    # Assuming affiliations.csv has the structure we need
-    affiliations = affiliation_df.copy()
-    
-    # Ensure required columns exist
+    # Select the defined list of columns
     required_cols = ['id', 'Affiliation', 'Abbreviation', 'University', 'City']
-    if not all(col in affiliations.columns for col in required_cols):
-        raise ValueError(f"Affiliations file must contain columns: {required_cols}")
+    affiliations = affiliation_df[required_cols].copy()
     
     return affiliations
 
 def build_journal_dimension(journal_df):
-    """Build journal dimension table from clean_journal_23.csv"""
-    # Select and rename relevant columns
+    """Build journal dimension table"""
+    # Select relevant columns
     journals = journal_df[[
         'Sourceid', 'Title', 'Issn', 'Rank', 'SJR', 'Publisher', 'Type', 'Areas'
     ]].copy()
     
     # Rename columns to match schema
     journals = journals.rename(columns={
-        'Sourceid': 'ID',
+        'Sourceid': 'id',
+        'Issn': 'ISSN',
     })
     
     return journals
@@ -49,8 +46,19 @@ def build_fact_table(combined_df):
         "Document Type", "Source title", "DOI", "Link",
         "Language of Original Document", "ISSN", "PubMed ID", "Volume", "Issue"
     ]
-    
+
     fact_table = combined_df[fact_columns].copy()
+
+    # Rename columns to match schema
+    fact_table = fact_table.rename(columns={
+        'Author ID': 'author_id',
+        'Affiliation ID': 'affiliation_id',
+        'Document Type': 'document_type',
+        'Source title': 'source_title',
+        'Language of Original Document': 'language',
+        'PubMed ID': 'pubmed_id',
+    })
+    
     return fact_table
 
 def main():

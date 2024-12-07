@@ -2,6 +2,24 @@ import pandas as pd
 from pathlib import Path
 from utils import get_project_root
 
+def expand_issn(df):
+    """Expand rows with multiple ISSN codes into separate rows"""
+    # Create a list to store new rows
+    expanded_rows = []
+    
+    for _, row in df.iterrows():
+        # Split ISSN codes and remove any whitespace
+        issn_list = [issn.strip() for issn in str(row['Issn']).split(',') if issn.strip()]
+        
+        # Create a new row for each ISSN code
+        for issn in issn_list:
+            new_row = row.copy()
+            new_row['Issn'] = issn
+            expanded_rows.append(new_row)
+    
+    # Create new dataframe from expanded rows
+    return pd.DataFrame(expanded_rows)
+
 def transform_sjr_csv():
     """Transform the SJR journal CSV file from semicolon to comma separated format"""
     project_root = get_project_root()
@@ -23,6 +41,15 @@ def transform_sjr_csv():
     # Clean column names
     df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('.', '')
 
+    # Clean numeric data
+    df['SJR'] = df['SJR'].str.replace(',', '.').astype(float)
+    
+    # Expand rows with multiple ISSN codes
+    df = expand_issn(df)
+    
+    # Drop duplicates based on ISSN
+    df = df.drop_duplicates(subset=['Issn'], keep='first')
+    
     # Write to new CSV file with comma separator
     df.to_csv(output_file, 
               index=False,

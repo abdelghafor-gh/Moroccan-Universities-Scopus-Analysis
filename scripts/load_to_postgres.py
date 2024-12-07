@@ -19,7 +19,7 @@ def load_table_to_db(df, table_class, session, chunk_size=1000):
         
         # Convert chunk to list of dictionaries
         records = chunk.to_dict('records')
-        
+
         # Create model instances
         instances = [table_class(**record) for record in records]
         
@@ -57,8 +57,11 @@ def main():
         # Load dimension tables first
         print("\nLoading dimension tables...")
         load_table_to_db(authors, Author, session)
+        # exit(0)
         load_table_to_db(affiliations, Affiliation, session)
+        # exit(0)
         load_table_to_db(journals, Journal, session)
+        # exit(0)
         
         # Load fact table
         print("\nLoading fact table...")
