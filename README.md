@@ -275,30 +275,21 @@ If you have any questions or suggestions, feel free to reach out to any of us!
 
 ### Team Members
 
- **Name** : Abdelghafor Elgharbaoui
- **Email** : [abdelghaforelgharbaoui@gmail.com]()
- **LinkedIn** : [Abdelghafor&#39;s LinkedIn](https://linkedin.com/in/personAprofile)
+**Name**: Abdelghafor Elgharbaoui  
+**Email**: [abdelghaforelgharbaoui@gmail.com](mailto:abdelghaforelgharbaoui@gmail.com)  
+**LinkedIn**: [Abdelghafor's LinkedIn](https://www.linkedin.com/in/abdelghafor-elgharbaoui-16a276202/)
 
- **Name** : Aymane maghouti
- **Email** : [aymanemaghouti16@gmail.com]()
- **LinkedIn** : [Aymane&#39;s LinkedIn](https://linkedin.com/in/personBprofile)
+**Name**: Aymane Maghouti  
+**Email**: [aymanemaghouti16@gmail.com](mailto:aymanemaghouti16@gmail.com)  
+**LinkedIn**: [Aymane's LinkedIn](https://www.linkedin.com/in/aymane-maghouti/)
 
- **Name** : Hamza Motassim
- **Email** : [motassimhamza99@gmail.com]()
- **LinkedIn** : [Hamza&#39;s LinkedIn](https://linkedin.com/in/personCprofile)
+**Name**: Hamza Motassim  
+**Email**: [motassimhamza99@gmail.com](mailto:motassimhamza99@gmail.com)  
+**LinkedIn**: [Hamza's LinkedIn](https://www.linkedin.com/in/hamza-motassim-a56801219/)
 
- **Name** : Ossama Outmani
- **Email** : [ossamaoutmani@gmail.com]()
- **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
-nkedIn](https://linkedin.com/in/personCprofile)
+**Name**: Ossama Outmani  
+**Email**: [ossamaoutmani@gmail.com](mailto:ossamaoutmani@gmail.com)  
+**LinkedIn**: [Ossama's LinkedIn](https://www.linkedin.com/in/ossama-outmani/)
 
- **Name** : Ossama Outmani
- **Email** : [ossamaoutmani@gmail.com]()
- **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
-nkedIn](https://linkedin.com/in/personCprofile)
-
- **Name** : Ossama Outmani
- **Email** : [ossamaoutmani@gmail.com]()
- **LinkedIn** : [Ossama&#39;s LinkedIn](https://linkedin.com/in/personDprofile)
 
 ---
