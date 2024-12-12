@@ -105,7 +105,12 @@ def main():
     print("Translating affiliations...")
     affiliations_df['Affiliation'] = affiliations_df['Affiliation'].apply(lambda aff: aff.strip())
     affiliations_df['Affiliation En Name'] = affiliations_df['Affiliation'].apply(translate_affiliation)
-    
+    affiliations_df['Type'] = affiliations_df['Affiliation'].apply(lambda aff: aff.split(' ')[0])
+
+    # Reorder the columns
+    affiliations_df = affiliations_df[['id', 'Affiliation', 'Abbreviation', 'Affiliation En Name', 'Type', 'University', 'City']]
+    # affiliations_df = affiliations_df.iloc[:, [0, 1, 2, 5, 6, 3, 4]] # do the same thing
+
     # Save the translated data
     print("Saving translated data...")
     output_path = project_root / "data/transformed/affiliations.csv"
