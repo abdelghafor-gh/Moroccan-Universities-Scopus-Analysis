@@ -11,7 +11,7 @@ def build_author_dimension(combined_df):
     authors = authors.rename(columns={
         'Author ID': 'id',
         'Author Name': 'name'
-        })
+    })
     
     return authors
 

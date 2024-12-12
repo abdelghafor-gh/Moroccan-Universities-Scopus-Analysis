@@ -22,6 +22,7 @@
 │   ├── raw/               # Raw data files from Scopus
 │   └── transformed/       # Transformed data files used for analysis
 ├── dags/                  # Airflow DAGs for scheduling data pipelines
+├── docs/                  # Project documentation
 ├── notebooks/             # Jupyter notebooks for data exploration & cleaning
 ├── models/                # Data model and schema definitions
 ├── dashboards/            # Power BI files (.pbix)
@@ -30,6 +31,44 @@
 ├── reports/               # Exported reports and visualizations
 └── README.md              # Project documentation
 ```
+
+## 📚 Detailed Documentation
+
+Dive deep into our comprehensive documentation! 🤿
+
+### 📖 Available Guides
+
+1. **Data Model Documentation** 🏗️
+   - [Data Model Guide](docs/data_model.md)
+   - Learn about our star schema design ⭐
+   - Understand table relationships 🔄
+   - Explore field descriptions 📝
+
+2. **ETL Process Guide** 🔄
+   - [ETL Documentation](docs/etl_process.md)
+   - Step-by-step pipeline explanation 📋
+   - Data transformation details 🔄
+   - Error handling procedures 🛠️
+
+3. **Data Directory Guide** 📂
+   - [Data Directory Documentation](docs/data_directory.md)
+   - Complete data flow timeline ⏱️
+   - File organization structure 📁
+   - Data quality standards ✨
+
+### 💡 Why Read Our Docs?
+
+- 🎯 Get up to speed quickly
+- 🔍 Find answers to common questions
+- 🛠️ Troubleshoot effectively
+- 🚀 Contribute with confidence
+- 📈 Understand data flows
+
+### 🎓 Perfect For:
+- New team members 👋
+- Contributors 🤝
+- Data analysts 📊
+- Researchers 🔬
 
 ---
 
