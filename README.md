@@ -277,7 +277,7 @@ If you have any questions or suggestions, feel free to reach out to any of us!
 
 **Name**: Abdelghafor Elgharbaoui  
 **Email**: [abdelghaforelgharbaoui@gmail.com](mailto:abdelghaforelgharbaoui@gmail.com)  
-**LinkedIn**: [Abdelghafor's LinkedIn](https://www.linkedin.com/in/abdelghafor-elgharbaoui-16a276202/)
+**LinkedIn**: [Abdelghafor's LinkedIn](https://www.linkedin.com/in/abdelghafor-elgharbaoui/)
 
 **Name**: Aymane Maghouti  
 **Email**: [aymanemaghouti16@gmail.com](mailto:aymanemaghouti16@gmail.com)  
