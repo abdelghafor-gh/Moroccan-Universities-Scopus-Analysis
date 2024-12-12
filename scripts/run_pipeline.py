@@ -31,9 +31,9 @@ def main():
     # Define the scripts to run in order
     scripts = [
         # Phase 1: Data Preparation
-        scripts_dir / 'translate_affiliations.py',      # Step 1: Translate French affiliations to English
-        scripts_dir / 'prepare_cities_mapping.py',      # Step 2: Create cities mapping
-        scripts_dir / 'prepare_affiliation_mappers.py', # Step 3: Create affiliation mappings
+        # scripts_dir / 'translate_affiliations.py',      # Step 1: Translate French affiliations to English
+        # scripts_dir / 'prepare_cities_mapping.py',      # Step 2: Create cities mapping
+        # scripts_dir / 'prepare_affiliation_mappers.py', # Step 3: Create affiliation mappings
         scripts_dir / 'etl.py',                        # Step 4: Run main ETL process
         
         # Phase 2: Data Integration

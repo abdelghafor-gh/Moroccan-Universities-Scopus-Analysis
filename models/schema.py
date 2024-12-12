@@ -1,8 +1,9 @@
-from sqlalchemy import Column, Integer, BigInteger, String, Float, Date, ForeignKey, create_engine
+from sqlalchemy import Column, Integer, BigInteger, String, Float, Date, ForeignKey, create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
-Base = declarative_base()
+metadata = MetaData()
+Base = declarative_base(metadata=metadata)
 
 class Publication(Base):
     """Fact table for publications from Moroccan Universities in Scopus.
@@ -72,7 +73,16 @@ class Journal(Base):
     Rank = Column("Rank", Integer)
     SJR = Column("SJR", Float)
     Publisher = Column("Publisher", String)
-    Areas = Column("Areas", String)
+    Categories = Column("Areas", String)
+
+
+class JournalCategory(Base):
+    """Journal Category dimension table"""
+    __tablename__ = "journal_categories"
+
+    id = Column("id", Integer, primary_key=True)
+    ISSN = Column("ISSN", String, ForeignKey("journals.ISSN"))
+    Category = Column("Category", String)
 
 
 class Author(Base):
@@ -84,11 +94,14 @@ class Author(Base):
     Attributes:
         id (BigInteger): Primary key - Unique identifier for the author.
         Name (String): Full name of the author.
+        affiliation_id (Integer): Foreign key to affiliations table.
     """
     __tablename__ = 'authors'
 
     id = Column(BigInteger, primary_key=True)
     Name = Column(String)
+
+    affiliation_id = Column(Integer, ForeignKey('affiliations.id'))
 
 
 class Affiliation(Base):

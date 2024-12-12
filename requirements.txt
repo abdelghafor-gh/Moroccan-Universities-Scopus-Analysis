@@ -4,7 +4,7 @@ numpy
 pandas
 unidecode
 python-dotenv>=1.0.0
-sqlalchemy>=1.4.0
+sqlalchemy==1.4.0
 # Database drivers
 psycopg2-binary>=2.9.0  # PostgreSQL driver
 snowflake-connector-python>=3.0.0  # Required for Snowflake

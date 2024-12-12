@@ -106,11 +106,10 @@ def extract_affiliation_name(affiliation_full_name, city, affiliations_by_city, 
 
 def transform_data(df, cities_mapping, affiliations_by_city, universities_by_city):
     """Transform the data using the mapping files"""
-    new_df = pd.DataFrame(columns=[
-        "Author ID", "Author Name", "Affiliation ID", "Title", "Year",
-        "Volume", "Issue", "ISSN", "Document Type", "Source title", "DOI", "Link",
-        "PubMed ID", "Language of Original Document"
-    ])
+    new_df = pd.DataFrame(columns=pd.Series([
+        "Author ID", "Author Name", "Affiliation ID", "Title", "Year", "Volume", "Issue",
+        "ISSN", "Document Type", "Source title", "DOI", "Link", "PubMed ID", "Language of Original Document"
+        ]))
 
     for _, row in tqdm(df.iterrows(), total=len(df), desc="Transforming rows", unit="row", leave=False):
         authors_with_ids = row["Author full names"].split(';')
@@ -160,7 +159,7 @@ def transform_data(df, cities_mapping, affiliations_by_city, universities_by_cit
             }
 
             data = pd.DataFrame(pub_data)
-            new_df = pd.concat([new_df, data], ignore_index=True)
+            new_df = pd.concat([new_df, data], ignore_index=True) # , verify_integrity=True
     
     return new_df
 

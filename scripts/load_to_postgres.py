@@ -8,7 +8,7 @@ import pandas as pd
 from tqdm import tqdm
 from utils import get_project_root
 from models.database import DatabaseConnection
-from models.schema import Publication, Journal, Author, Affiliation
+from models.schema import Publication, Journal, Author, Affiliation, JournalCategory
 
 def load_table_to_db(df, table_class, session, chunk_size=1000):
     """Load a dataframe to database table in chunks"""
@@ -42,6 +42,7 @@ def main():
     authors = pd.read_csv(dimensions_dir / "authors.csv")
     affiliations = pd.read_csv(dimensions_dir / "affiliations.csv")
     journals = pd.read_csv(dimensions_dir / "journals.csv")
+    journal_categories = pd.read_csv(dimensions_dir / "journal_categories.csv")
     publications = pd.read_csv(fact_dir / "publications_fact.csv")
     
     # Connect to database
@@ -56,12 +57,10 @@ def main():
     try:
         # Load dimension tables first
         print("\nLoading dimension tables...")
-        load_table_to_db(authors, Author, session)
-        # exit(0)
         load_table_to_db(affiliations, Affiliation, session)
-        # exit(0)
+        load_table_to_db(authors, Author, session)
         load_table_to_db(journals, Journal, session)
-        # exit(0)
+        load_table_to_db(journal_categories, JournalCategory, session)
         
         # Load fact table
         print("\nLoading fact table...")
