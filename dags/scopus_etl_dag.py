@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime, timedelta
 import sys
 import os
@@ -24,7 +25,6 @@ from prepare_affiliation_mappers import main as prepare_affiliation_mappers
 from etl import main as run_etl
 from combine_transformed import combine_transformed_files
 from build_fact_and_dimensions import main as build_fact_dimensions
-from load_to_postgres import main as load_to_postgres
 from transform_journal import main as transform_journal
 
 # Import database initialization for Airflow
@@ -37,7 +37,7 @@ def create_directories():
     (project_root / "data/transformed").mkdir(parents=True, exist_ok=True)
     (project_root / "mappers").mkdir(parents=True, exist_ok=True)
     (project_root / "data/final").mkdir(parents=True, exist_ok=True)
-    (project_root / "data/warehouse").mkdir(parents=True, exist_ok=True)
+    (project_root / "data/dimensions").mkdir(parents=True, exist_ok=True)
 
 # Define default arguments
 default_args = {
@@ -183,13 +183,14 @@ init_db_task = PythonOperator(
     """
 )
 
-load_to_postgres_task = PythonOperator(
-    task_id='load_to_postgres',
-    python_callable=load_to_postgres,
+trigger_load_to_postgres = TriggerDagRunOperator(
+    task_id='trigger_load_to_postgres',
+    trigger_dag_id='load_scopus_data_to_postgres',
     dag=dag,
     doc_md="""
-    # Load to Postgres Task
-    Loads fact and dimension tables into PostgreSQL database.
+    # Trigger Load to Postgres Task
+    Triggers the dedicated DAG for loading data into PostgreSQL.
+    This DAG handles loading of all fact and dimension tables in a structured way.
     
     Input: data/warehouse/* tables
     Output: Populated PostgreSQL database
@@ -197,4 +198,4 @@ load_to_postgres_task = PythonOperator(
 )
 
 # Define task dependencies
-create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> transform_journal_task >> etl_task >> combine_transformed_task >> build_dimensions_task >> init_db_task >> load_to_postgres_task
+create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> transform_journal_task >> etl_task >> combine_transformed_task >> build_dimensions_task >> init_db_task >> trigger_load_to_postgres

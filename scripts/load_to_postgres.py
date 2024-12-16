@@ -29,7 +29,7 @@ def load_table_to_db(df, table_class, session, chunk_size=1000):
         # Commit the chunk
         session.commit()
 
-def main():
+def main(is_airflow=False):
     print("\nLoading data to PostgreSQL database...")
     
     # Get paths
@@ -47,7 +47,7 @@ def main():
     
     # Connect to database
     print("Connecting to database...")
-    db = DatabaseConnection()
+    db = DatabaseConnection(is_airflow=is_airflow)
     db.connect()
     
     # Create a session

@@ -1,6 +1,4 @@
 import pandas as pd
-from pathlib import Path
-import os
 from utils import get_project_root, create_directories
 
 # Dictionary of French to English translations

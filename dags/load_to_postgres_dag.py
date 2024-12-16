@@ -10,9 +10,13 @@ from contextlib import contextmanager
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
+from scripts.utils import get_project_root
 from models.database import DatabaseConnection
 from models.schema import Publication, Journal, Author, Affiliation, JournalCategory
 from scripts.load_to_postgres import load_table_to_db
+
+# Update project root using the utility function
+project_root = get_project_root()
 
 # Create a single database connection for the DAG
 db = DatabaseConnection(is_airflow=True)
@@ -58,7 +62,7 @@ default_args = {
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    'retry_delay': timedelta(weeks=1),
 }
 
 # Create DAG
@@ -104,4 +108,5 @@ with DAG(
 
     # Set dependencies
     # Load dimension tables first, then fact table
-    [load_authors_task, load_affiliations_task, load_journals_task, load_journal_categories_task] >> load_publications_task
+    load_affiliations_task >> load_authors_task
+    [load_authors_task, load_journals_task, load_journal_categories_task] >> load_publications_task
