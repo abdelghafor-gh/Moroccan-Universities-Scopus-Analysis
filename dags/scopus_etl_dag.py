@@ -11,16 +11,24 @@ def get_project_root():
     current_dir = Path(os.path.dirname(os.path.abspath(__file__)))
     return current_dir.parent
 
-# Add the scripts directory to Python path
+# Add the project directories to Python path
 project_root = get_project_root()
 scripts_dir = project_root / 'scripts'
-sys.path.append(str(scripts_dir))
+models_dir = project_root / 'models'
+sys.path.extend([str(scripts_dir), str(models_dir)])
 
 # Import the ETL functions
 from translate_affiliations import main as translate_affiliations
 from prepare_cities_mapping import main as prepare_cities_mapping
 from prepare_affiliation_mappers import main as prepare_affiliation_mappers
 from etl import main as run_etl
+from combine_transformed import combine_transformed_files
+from build_fact_and_dimensions import main as build_fact_dimensions
+from load_to_postgres import main as load_to_postgres
+from transform_journal import main as transform_journal
+
+# Import database initialization for Airflow
+from init_db_airflow import init_database_airflow
 
 # Create necessary directories
 def create_directories():
@@ -28,6 +36,8 @@ def create_directories():
     project_root = get_project_root()
     (project_root / "data/transformed").mkdir(parents=True, exist_ok=True)
     (project_root / "mappers").mkdir(parents=True, exist_ok=True)
+    (project_root / "data/final").mkdir(parents=True, exist_ok=True)
+    (project_root / "data/warehouse").mkdir(parents=True, exist_ok=True)
 
 # Define default arguments
 default_args = {
@@ -60,6 +70,8 @@ create_dirs_task = PythonOperator(
     Creates necessary directories for the pipeline:
     - data/transformed
     - mappers
+    - data/final
+    - data/warehouse
     """
 )
 
@@ -105,6 +117,19 @@ affiliation_mappers_task = PythonOperator(
     """
 )
 
+transform_journal_task = PythonOperator(
+    task_id='transform_journal',
+    python_callable=transform_journal,
+    dag=dag,
+    doc_md="""
+    # Transform Journal Task
+    Transforms journal metadata and prepares it for the database.
+    
+    Input: data/raw/journal_metrics.csv
+    Output: data/transformed/journal_metrics_transformed.csv
+    """
+)
+
 etl_task = PythonOperator(
     task_id='run_etl',
     python_callable=run_etl,
@@ -120,5 +145,56 @@ etl_task = PythonOperator(
     """
 )
 
+combine_transformed_task = PythonOperator(
+    task_id='combine_transformed',
+    python_callable=combine_transformed_files,
+    dag=dag,
+    doc_md="""
+    # Combine Transformed Task
+    Combines all transformed CSV files and filters invalid entries.
+    
+    Input: data/transformed/transformed_*.csv
+    Output: data/final/combined_data.csv
+    """
+)
+
+build_dimensions_task = PythonOperator(
+    task_id='build_fact_dimensions',
+    python_callable=build_fact_dimensions,
+    dag=dag,
+    doc_md="""
+    # Build Fact and Dimensions Task
+    Creates fact and dimension tables for the data warehouse.
+    
+    Input: data/final/combined_data.csv
+    Output: Multiple dimension and fact tables in data/warehouse/
+    """
+)
+
+init_db_task = PythonOperator(
+    task_id='init_db',
+    python_callable=init_database_airflow,
+    dag=dag,
+    doc_md="""
+    # Initialize Database Task
+    Creates the database schema and tables using Airflow-specific database initialization.
+    
+    Output: Initialized PostgreSQL database schema
+    """
+)
+
+load_to_postgres_task = PythonOperator(
+    task_id='load_to_postgres',
+    python_callable=load_to_postgres,
+    dag=dag,
+    doc_md="""
+    # Load to Postgres Task
+    Loads fact and dimension tables into PostgreSQL database.
+    
+    Input: data/warehouse/* tables
+    Output: Populated PostgreSQL database
+    """
+)
+
 # Define task dependencies
-create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> etl_task
+create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> transform_journal_task >> etl_task >> combine_transformed_task >> build_dimensions_task >> init_db_task >> load_to_postgres_task

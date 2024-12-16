@@ -1,7 +1,5 @@
 import subprocess
 import sys
-from pathlib import Path
-import os
 from utils import get_project_root, create_directories
 
 def run_script(script_path):
@@ -31,18 +29,19 @@ def main():
     # Define the scripts to run in order
     scripts = [
         # Phase 1: Data Preparation
-        # scripts_dir / 'translate_affiliations.py',      # Step 1: Translate French affiliations to English
-        # scripts_dir / 'prepare_cities_mapping.py',      # Step 2: Create cities mapping
-        # scripts_dir / 'prepare_affiliation_mappers.py', # Step 3: Create affiliation mappings
-        scripts_dir / 'etl.py',                        # Step 4: Run main ETL process
+        scripts_dir / 'translate_affiliations.py',      # Step 1: Translate French affiliations to English
+        scripts_dir / 'prepare_cities_mapping.py',      # Step 2: Create cities mapping
+        scripts_dir / 'prepare_affiliation_mappers.py', # Step 3: Create affiliation mappings
+        scripts_dir / 'transform_journal.py',           # Step 4: Transform journal metadata
+        scripts_dir / 'etl.py',                         # Step 5: Run main ETL process
         
         # Phase 2: Data Integration
-        scripts_dir / 'combine_transformed.py',         # Step 5: Combine transformed files
-        scripts_dir / 'build_fact_and_dimensions.py',   # Step 6: Build star schema tables
+        scripts_dir / 'combine_transformed.py',         # Step 6: Combine transformed files
+        scripts_dir / 'build_fact_and_dimensions.py',   # Step 7: Build star schema tables
         
         # Phase 3: Database Operations
-        models_dir / 'init_db.py',                     # Step 7: Initialize database schema
-        scripts_dir / 'load_to_postgres.py'            # Step 8: Load data to PostgreSQL
+        models_dir / 'init_db.py',                      # Step 8: Initialize database schema
+        scripts_dir / 'load_to_postgres.py'             # Step 9: Load data to PostgreSQL
     ]
     
     # Run each script in sequence

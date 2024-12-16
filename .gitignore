@@ -1,7 +1,8 @@
 .venv/
-models/.env
+# models/.env
 models/__pycache__/
 notebooks/output/
 scripts/__pycache__/
-docker-compose.yaml
+# docker-compose.yaml
 Tasks.md
+scopus_analysis.sql
