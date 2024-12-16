@@ -1,6 +1,6 @@
 .venv/
 # models/.env
-# __pycache__/
+__pycache__/
 dags/__pycache__/
 models/__pycache__/
 scripts/__pycache__/
