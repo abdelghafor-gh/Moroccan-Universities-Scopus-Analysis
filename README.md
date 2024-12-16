@@ -212,6 +212,96 @@ python scripts/run_pipeline.py
 
 ---
 
+## 🚁 Apache Airflow Implementation
+
+Our ETL pipeline is orchestrated using Apache Airflow, providing robust scheduling and monitoring capabilities! 🎯
+
+### 🐳 Docker Setup
+
+We use Docker to run Airflow in a containerized environment. The setup is located in the `airflow-docker/` directory:
+
+```bash
+📁 airflow-docker/
+├── .env                      # Environment variables
+├── Dockerfile                # Dockerfile for Airflow container
+├── requirements-airflow.txt  # Airflow dependencies
+└── docker-compose.yaml       # Docker compose configuration
+```
+
+### 🚀 Getting Started with Airflow
+
+1. **Start Airflow Services** 🛫
+
+```bash
+cd airflow-docker
+docker-compose up -d
+```
+
+2. **Access Airflow UI** 🖥️
+   - Open your browser and navigate to `http://localhost:8080`
+   - Default credentials:
+     - Username: `admin`
+     - Password: `admin`
+
+### 📊 Available DAGs
+
+1. **`scopus_etl_dag`** 🔄
+   - Main ETL pipeline for Scopus data processing
+   - Steps:
+     1. 📁 Create directories
+     2. 🔄 Translate affiliations
+     3. 🗺️ Map cities
+     4. 🏛️ Process affiliations
+     5. 📚 Transform journal data
+     6. 📊 Run ETL process
+     7. 🔄 Combine transformed files
+     8. 🏗️ Build fact and dimensions
+     9. 🗄️ Initialize database
+     10. 📥 Load data to PostgreSQL
+
+### 🔍 Monitoring & Management
+
+- **DAG View** 📋: Monitor task status and dependencies
+- **Tree View** 🌳: Visualize task hierarchy
+- **Graph View** 📊: Interactive task dependency graph
+- **Task Instance Details** 🔎: View logs and task execution details
+
+### ⚙️ Configuration
+
+The Airflow setup includes:
+
+- 🐳 **Docker Services**:
+  - Airflow Webserver
+  - Airflow Scheduler
+  - PostgreSQL (Airflow metadata)
+
+- 🔐 **Environment Variables**:
+  - Database connections
+  - Airflow configuration
+  - Custom settings
+
+### 🛠️ Troubleshooting
+
+Common solutions for Airflow issues:
+
+1. **Logs** 📝
+   ```bash
+   docker-compose logs -f webserver
+   ```
+
+2. **Reset Environment** 🔄
+   ```bash
+   docker-compose down -v
+   docker-compose up -d
+   ```
+
+3. **Check Container Status** 🔍
+   ```bash
+   docker-compose ps
+   ```
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
