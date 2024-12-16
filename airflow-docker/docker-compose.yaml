@@ -12,7 +12,7 @@ services:
       - "${POSTGRES_PORT}:5432"  # Host port mapped to container port 5432
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./docker/postgres:/docker-entrypoint-initdb.d
+      - ./postgres:/docker-entrypoint-initdb.d
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
       interval: 5s
@@ -55,11 +55,11 @@ services:
     ports:
       - "${AIRFLOW_WEBSERVER_PORT}:8080"
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./scripts:/opt/airflow/scripts
-      - ./data:/opt/airflow/data
-      - ./mappers:/opt/airflow/mappers
-      - ./models:/opt/airflow/models
+      - ../dags:/opt/airflow/dags
+      - ../scripts:/opt/airflow/scripts
+      - ../data:/opt/airflow/data
+      - ../mappers:/opt/airflow/mappers
+      - ../models:/opt/airflow/models
       - airflow-data:/opt/airflow
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
@@ -82,11 +82,11 @@ services:
       - AIRFLOW__CORE__EXECUTOR=${AIRFLOW__CORE__EXECUTOR}
       - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./scripts:/opt/airflow/scripts
-      - ./data:/opt/airflow/data
-      - ./mappers:/opt/airflow/mappers
-      - ./models:/opt/airflow/models
+      - ../dags:/opt/airflow/dags
+      - ../scripts:/opt/airflow/scripts
+      - ../data:/opt/airflow/data
+      - ../mappers:/opt/airflow/mappers
+      - ../models:/opt/airflow/models
       - airflow-data:/opt/airflow
     depends_on:
       postgres:

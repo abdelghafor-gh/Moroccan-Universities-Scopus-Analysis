@@ -1,6 +1,5 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-# from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime, timedelta
 import sys
 import os
@@ -213,5 +212,4 @@ load_to_postgres_task = PythonOperator(
 # )
 
 # Define task dependencies
-# create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> transform_journal_task >> etl_task >> combine_transformed_task >> build_dimensions_task >> init_db_task >> trigger_load_to_postgres
 create_dirs_task >> translate_task >> cities_mapping_task >> affiliation_mappers_task >> transform_journal_task >> etl_task >> combine_transformed_task >> build_dimensions_task >> init_db_task >> load_to_postgres_task
