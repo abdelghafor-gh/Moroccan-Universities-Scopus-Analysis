@@ -28,7 +28,8 @@ from transform_journal import main as transform_journal
 from load_to_postgres import main as load_to_postgres
 
 # Import database initialization for Airflow
-from init_db_airflow import init_database_airflow
+# from init_db_airflow import init_database_airflow
+from init_db import init_database
 
 # Create necessary directories
 def create_directories():
@@ -173,7 +174,9 @@ build_dimensions_task = PythonOperator(
 
 init_db_task = PythonOperator(
     task_id='init_db',
-    python_callable=init_database_airflow,
+    # python_callable=init_database_airflow,
+    python_callable=init_database,
+    op_kwargs={'is_airflow': True},
     dag=dag,
     doc_md="""
     # Initialize Database Task
