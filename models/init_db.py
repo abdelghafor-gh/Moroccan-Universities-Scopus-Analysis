@@ -1,11 +1,11 @@
 from database import DatabaseConnection
 from schema import Base
 
-def init_database():
+def init_database(is_airflow=False):
     """Initialize the database and create all tables"""
     try:
         # Create database connection
-        db = DatabaseConnection()
+        db = DatabaseConnection(is_airflow=is_airflow)
         db.connect()
         
         # Drop all tables
