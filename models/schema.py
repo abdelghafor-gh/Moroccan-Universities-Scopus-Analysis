@@ -73,7 +73,7 @@ class Journal(Base):
     Rank = Column("Rank", Integer)
     SJR = Column("SJR", Float)
     Publisher = Column("Publisher", String)
-    Categories = Column("Areas", String)
+    Categories = Column("Categories", String)
 
 
 class JournalCategory(Base):
