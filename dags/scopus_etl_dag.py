@@ -25,10 +25,9 @@ from etl import main as run_etl
 from combine_transformed import combine_transformed_files
 from build_fact_and_dimensions import main as build_fact_dimensions
 from transform_journal import main as transform_journal
-from load_to_postgres import main as load_to_postgres
+from load_to_warehouse import main as load_to_warehouse
 
 # Import database initialization for Airflow
-# from init_db_airflow import init_database_airflow
 from init_db import init_database
 
 # Create necessary directories
@@ -174,7 +173,6 @@ build_dimensions_task = PythonOperator(
 
 init_db_task = PythonOperator(
     task_id='init_db',
-    # python_callable=init_database_airflow,
     python_callable=init_database,
     op_kwargs={'is_airflow': True},
     dag=dag,
