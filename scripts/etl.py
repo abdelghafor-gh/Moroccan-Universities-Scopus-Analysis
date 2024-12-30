@@ -187,7 +187,7 @@ def main():
     
     print("Processing all files in scopus directory...")
     project_root = get_project_root()
-    scopus_dir = project_root / "data/raw/scopus"
+    scopus_dir = project_root / "data/raw/scopus-demo"
     transformed_dir = project_root / "data/transformed"
     
     # Create output directory if it doesn't exist

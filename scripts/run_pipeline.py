@@ -1,6 +1,8 @@
 import subprocess
 import sys
+import os
 from utils import get_project_root, create_directories
+from dotenv import load_dotenv
 
 def run_script(script_path):
     """Run a Python script and handle any errors"""
@@ -23,6 +25,10 @@ def main():
     scripts_dir = project_root / "scripts"
     models_dir = project_root / "models"
     
+    # Load environment variables
+    load_dotenv(models_dir / '.env')
+    db_type = os.getenv("DB_TYPE", "postgres")
+    
     # Create all necessary directories
     create_directories()
     
@@ -41,7 +47,7 @@ def main():
         
         # Phase 3: Database Operations
         models_dir / 'init_db.py',                      # Step 8: Initialize database schema
-        scripts_dir / 'load_to_postgres.py'             # Step 9: Load data to PostgreSQL
+        scripts_dir / 'load_to_warehouse.py'            # Step 9: Load data to database
     ]
     
     # Run each script in sequence
@@ -55,7 +61,7 @@ def main():
     print("1. Extracted and transformed from source files")
     print("2. Combined and filtered for Moroccan publications")
     print("3. Organized into star schema structure")
-    print("4. Loaded into PostgreSQL database")
+    print(f"4. Loaded into {db_type.upper()} database")
 
 if __name__ == "__main__":
     main()
