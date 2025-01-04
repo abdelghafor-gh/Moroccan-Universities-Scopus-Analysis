@@ -3,6 +3,8 @@
 ## 🎯 Overview
 This document provides detailed information about the data model used in the Moroccan Universities Scopus Analysis project. The model follows a star schema design pattern, optimized for analyzing academic publications from Moroccan Universities.
 
+![Data Model Diagram](data-model.png)
+
 ## 🌟 Schema Structure
 
 ### 📚 Fact Table: Publications
