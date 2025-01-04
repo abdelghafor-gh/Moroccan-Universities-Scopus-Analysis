@@ -26,6 +26,8 @@ The central fact table storing all academic publications and their metadata.
 | Link | String | Access URL 🌐 | URL to access the publication |
 | PubMed_ID | String | PubMed identifier 🏥 | ID in the PubMed database |
 | Original_Language | String | Publication language 🌍 | Original language of the document |
+| author_id | BigInteger | Author reference 👤 | Foreign key to authors table |
+| affiliation_id | Integer | Affiliation reference 🏛️ | Foreign key to affiliations table |
 
 ### 📊 Dimension Tables
 
@@ -41,17 +43,27 @@ Stores information about academic journals and their metrics.
 | Rank | Integer | Journal ranking 🏆 | Ranking position |
 | SJR | Float | Impact factor 📈 | SCImago Journal Rank indicator |
 | Publisher | String | Publisher name 🏢 | Name of the publishing entity |
-| Areas | String | Research domains 🔬 | Research areas covered |
+| Categories | String | Research domains 🔬 | Research categories covered |
 
-#### 2. Authors 👥
+#### 2. Journal Categories 📊
+Stores the categories associated with journals.
+
+| Field Name | Type | Description | Notes |
+|------------|------|-------------|--------|
+| id | Integer | Primary key 🔑 | Unique identifier for each category entry |
+| ISSN | String | Journal reference 📚 | Foreign key to journals table |
+| Category | String | Category name 🏷️ | Name of the research category |
+
+#### 3. Authors 👥
 Contains information about publication authors.
 
 | Field Name | Type | Description | Notes |
 |------------|------|-------------|--------|
 | id | BigInteger | Primary key 🔑 | Unique identifier for each author |
 | Name | String | Author name 👤 | Full name of the author |
+| affiliation_id | Integer | Affiliation reference 🏛️ | Foreign key to affiliations table |
 
-#### 3. Affiliations 🏛️
+#### 4. Affiliations 🏛️
 Stores details about academic institutions.
 
 | Field Name | Type | Description | Notes |
@@ -66,9 +78,10 @@ Stores details about academic institutions.
 ## 🔄 Relationships
 
 ### 🔗 Primary to Foreign Key Relationships
-- Publications.ISSN → Journals.ISSN
 - Publications.author_id → Authors.id
 - Publications.affiliation_id → Affiliations.id
+- Authors.affiliation_id → Affiliations.id
+- JournalCategory.ISSN → Journals.ISSN
 
 ## 💡 Usage Examples
 
