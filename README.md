@@ -377,6 +377,7 @@ If you have any questions or suggestions, feel free to reach out to any of us!
 **Email**: [motassimhamza99@gmail.com](mailto:motassimhamza99@gmail.com)  
 **LinkedIn**: [Hamza's LinkedIn](https://www.linkedin.com/in/hamza-motassim-a56801219/)
 
+
 **Name**: Ossama Outmani  
 **Email**: [ossamaoutmani@gmail.com](mailto:ossamaoutmani@gmail.com)  
 **LinkedIn**: [Ossama's LinkedIn](https://www.linkedin.com/in/ossama-outmani/)
